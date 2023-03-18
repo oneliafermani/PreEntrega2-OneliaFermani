@@ -1,0 +1,376 @@
+
+/* estilo de fuente*/ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Montserrat&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*esta clase tiene el estilo principal de la pag  HEADER */
+.header{
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.headerLogo{
+    margin: 15px;
+}
+/* estilos del navegador*/ /*padre*/
+.header__listaNav{
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin:10px;
+    padding: 10px;
+}
+/*boton nav*/ /*hijo*/
+.header__listaNav__linkNav{
+    margin: 5px;
+    padding: 4px;
+    text-align:center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(245, 233, 235);
+}
+/*main del index*/ /*se adapta al contenido que tiene de largo width*/
+.inicio{
+    background: url(./fondoinicio.jpg);
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+}
+/*seccion 1 presentacion*/ 
+.inicio__secUno{
+    margin: 10px;
+    padding: 10px;
+}
+
+.inicio__secUno__titulo{
+    margin: 5px;
+    padding: 0px;
+    font-family: 'Courgette', cursive;
+    color:  rgb(170, 68, 196);
+    text-align: center;
+    font-size: 50px;
+}
+.inicio__secUno__subtitulo{
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.inicio__secUno__textUno{
+    margin: 0px;
+    padding: 10px;
+    color: rgb(5, 5, 5);
+    text-align: justify;
+}
+/*seccion 2 informacion */
+.inicio__secDos{
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    position: relative;
+}
+
+.inicio__secDos__box{
+    display: flex;
+    width: 28%;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
+    -webkit-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
+    -moz-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
+    border: 6px solid rgb(198, 152, 202);
+    border-radius: 10px;
+    background:rgba(235, 233, 233, 0.678);
+    align-items: center;
+
+}
+.inicio__secDos__box:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.inicio__secDos__box__name{
+    color: rgb(29, 25, 34);
+    align-items: flex-start;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration:underline;
+    position: relative;
+}
+
+.inicio__secDos__box__text{
+    color: rgb(45, 73, 73);
+    text-align: justify;
+    font-size: 15px;
+    position: relative;
+    
+}
+.inicio__secDos__img{
+    object-fit: cover;
+    width: 100%;
+
+}
+
+/*footer del index*/ 
+.footer{
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__text{
+    margin: 3px;
+    text-align: center;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/*comienzo pag nuestra propuesta*/
+.pagDos{  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:  rgb(247, 242, 246);
+}
+/* primera seccion*/
+.pagDos__secUno{
+    background: url(./fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    object-fit: cover;
+    border-end-start-radius: 75px;
+    border-end-end-radius: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.pagDos__secUno__titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:  rgb(63, 62, 62);
+    font-size: 30px;
+}
+
+
+.pagDos__secDos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.pagDos__secDos__img1{
+    width: 80%;
+    margin: 15px;
+    border-end-start-radius: 75px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.pagDos__secDos__img2{
+    width: 80%;
+    margin: 15px;
+    border-end-end-radius: 75px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.pagDos__secDos__text{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(5, 5, 5);
+    text-align: justify;
+}
+
+
+/*comienzo pag galeria*/
+.pagTres{
+    display: grid;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
+}
+.pagTres__titulo{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(170, 68, 196);
+    text-align: center;
+    font-size: 25px;
+}
+.pagTres__secUno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #60c0d4, #6ebfe6, #8abcf1, #adb6f3, #cfb0ec);
+}
+.pagTres__secUno__galeria{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(14, 15, 15);
+    text-align: justify;
+    text-decoration:underline double;
+
+}
+
+/*video sala lactantes*/
+.pagTres__secUno__video{
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin: 20px;
+    box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
+    -webkit-box-shadow: 15px 18px 26px 3px rgba(12, 12, 11, 0.877);
+    -moz-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
+    position:relative;
+}
+
+
+/* estilado de la galeria de imagenes con grid*/
+.pagTres__secUno__grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+
+}
+
+.pagTres__secDos__imag{
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+/*comienzo pag quienes somos*/
+.pagCuatro{
+    display: grid;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
+
+}
+.pagCuatro__secUno__titulo{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(170, 68, 196);
+    text-align: center;
+    font-size: 25px;
+}
+
+/*presentacion de las docentes*/
+.pagCuatro__secDos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.pagCuatro__secDos__titulo{
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+}
+.pagCuatro__secDos__box{
+    display: inline-block;
+    width: 300px;
+    height: 200px;    
+    margin: 15px;
+    padding: 5px;
+    border: 2px solid rgba(152, 4, 221, 0.726);
+    text-align: justify;
+    color: black;
+    background:white;
+    position: relative;
+    
+}
+
+.pagCuatro__secTres__subtitulo{
+    margin: 20px;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+}
+.pagCuatro__secTres__mapa{
+    width: 50%;
+    margin: 20px;
+    border: 1px solid white;
+}
+/*comiendo pag contacto*/
+.pagCinco{
+    display: grid;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
+    
+}
+/*primera seccion*/ 
+.pagCinco__secUno__titulo{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:  rgb(170, 68, 196);
+    text-align: center;
+    font-size: 25px;
+}
+/*segunda seccion de formulario*/
+.pagCinco__secDos__subtitulo{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(24, 22, 23);
+    text-align: justify;
+    font-size: 25px;
+}
+.pagCinco__secDos__formulario{
+    width: 50%;
+    display: block;
+    color: rgb(107, 28, 103);
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

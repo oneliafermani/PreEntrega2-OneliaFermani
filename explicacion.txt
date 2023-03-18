@@ -1,0 +1,7 @@
+	PROYECTO: JARDIN MATERNAL - EL RINCÓN DE LOS SUEÑOS
+Mi objetivo es crear un sitio web sobre un Jardín Maternal, el cual sea fácil de navegar tanto para la familia de los miembros como para futuros interesados. 
+Mi idea es mostrar un inicio donde se describa la metodología y orientación del jardín, además de una sección de noticias/informes importantes respecto de la dinámica de la institución y artículos de importancia para los padres/tutores. 
+Luego una página donde se explicarán las actividades y los talleres que se pretenden desarrollar durante la jornada.  Acompañado de otra página llamada galería donde se puedan constatar las mismas y poder mostrar las instalaciones de la institución.  
+
+También propongo una página "¿quiénes somos? para contar un poco como surgió/ideo el Jardín y quienes son las docentes y directivos de la misma, con el fin de acercarnos un poco más a las familias y futuros interesados. Y haciendo conocer nuestra ubicación. 
+y por último una página de contacto para que se informe de cómo deben inscribir a los niños y también para que puedan contactarse con el jardín, registrar una cita o consultar sus inquietudes.
