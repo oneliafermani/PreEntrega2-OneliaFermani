@@ -2,8 +2,7 @@
 /* estilo de fuente*/ 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Montserrat&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
-
-
+/*media queries mobile*/
 
 *{
     margin: 0;
@@ -362,8 +361,98 @@
     font-size: 15px;
 }
 
+/*media queries para mobile - pag 1 y 2 - de bootstrap solo pude utilizar los conteiner fluid porque se me cambia en el diseño desktop cuadno utilizo container-sm (etc)- */
+@media screen and (max-width: 768px) and (min-width: 576px){
+    .header{
+        display: grid;
+    }
+    .headerLogo{
+        padding: 5px;
+    }
+    .header__listaNav{
+        width: 100%;
+    }
+    .header__listaNav__linkNav{
+        font-size: 13px;
+    }
+    .inicio{
+        background: rgb(238, 237, 232);
+    }
+    .inicio__secUno__titulo{
+        font-size: 30px;
+    }
+    .inicio__secUno__subtitulo{
+        font-size: 15px;
+    }
+    .inicio__secUno__textUno{
+        font-size: small;
+    }
+    .inicio__secDos{
+        display: block;  
+        margin: 10px;
+        padding: 10px;
+    }
+    .inicio__secDos__box{
+        display: block;
+        width: 90%;
+    } 
+    .inicio__secDos__box__name{
+        font-size: 10px;
+    }
+    .inicio__secDos__box__text{
+        font-size: 10px;
+    }
 
+    .pagDos{
+        display: block;
+    }
+    .pagDos__secDos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around ;
+        vertical-align: baseline;
+        margin: auto;
+    }
+    .img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+    }
+    .pagDos__secDos__img1{
+        padding:auto;
+        width: 70%;
+    }
+    .pagDos__secDos__img2{
+        padding:auto;
+        align-items: flex-end;
+        width: 70%;
+    }
+    .pagDos__secDos__text{
+        width: 60%;
+        margin: 10px;
+        font-size: 12px;
+    }
+}
 
+/*media queries para tablets - algunas modificaciones*/
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .pagDos__secDos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around ;
+        vertical-align: baseline;
+        margin: auto;
+    }
+    .pagDos__secDos__text{
+        width: 50%;
+        margin: 10px;
+        font-size: 15px;
+    }
+}
 
 
 
