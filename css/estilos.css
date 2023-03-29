@@ -164,12 +164,14 @@
     height: 50vh;
     object-fit: cover;
     border-end-start-radius: 75px;
+    border-end-end-radius: 75px;
     display: flex;
     flex-direction: column;
+    justify-content: end;
 }
 .pagDos__secUno__titulo{
-    margin: 10px;
-    padding: 5px;
+    margin-left: 40px;
+    margin-bottom: 150px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color:  rgb(63, 62, 62);
@@ -211,7 +213,7 @@
 .pagTres{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
+    background-image: rgb(238, 229, 236);
 }
 
 .imgFondo{
@@ -221,12 +223,14 @@
     height: 50vh;
     object-fit: cover;
     border-end-end-radius: 75px;
+    border-end-start-radius: 75px;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 .pagTres__titulo{
-    margin: 5px;
+    margin-left: 40px;
+    margin-bottom: 150px;
     padding: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -274,7 +278,8 @@
 
 
 /* estilado de la galeria de imagenes con grid*/
-.pagTres__secUno__galeria{
+.pagTres__secDos__galeria{
+    margin: 15px;
     font-weight: lighter, bold;
     font-size: 25px;
     font-weight: bold;
@@ -283,32 +288,30 @@
 
 }
 
-.pagTres__secUno__grilla{
-    margin: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 8px;
-     
+.pagTres__secDos__grilla{
+    display: grid; 
+    grid-template-columns:  1fr 1fr 1fr; 
+    grid-template-rows:    1fr 1fr 1fr 1fr ; 
+    gap: 5px 5px; 
+/*agregar areas segun que use*/
 }
+
 .boxs{
     box-sizing: content-box;
-    width: 80%;
-    margin: 8px;
-    padding: 5px;
+    width: 90%;
+    margin: auto;
+    padding: 0px;
     display: flex;
     flex-direction: column ;
     justify-content: center;
     align-items: center;
-    border: 3px solid rgba(179, 55, 152, 0.77);;
-    background-color: rgba(255, 255, 255, 0.685);
+    border: 3px solid rgba(68, 19, 58, 0.377);;
+    background-color: rgb(0, 0, 0);
     border-radius:10px 10px 10px 10px;
-}
-.pagTres__secDos__imag{
-    width: 100%;
-    padding: 10px;
     object-fit: cover;
 }
+
+/*acomodor grilla o con bs la galeria*/
 
 /*comienzo pag quienes somos*/
 .pagCuatro{
@@ -457,6 +460,13 @@
         align-items: center;
         justify-content: center;
         width: 40%;
+        object-fit: contain;
+    }
+    .pagDos__secUno__titulo{
+        display: flex;
+        justify-content: center;
+        margin-bottom:5px ;
+        font-size: 24px;
     }
     .pagDos__secDos__img1{
         padding:auto;
