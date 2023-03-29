@@ -164,14 +164,10 @@
     height: 50vh;
     object-fit: cover;
     border-end-start-radius: 75px;
-    border-end-end-radius: 75px;
     display: flex;
     flex-direction: column;
 }
 .pagDos__secUno__titulo{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin: 10px;
     padding: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -213,27 +209,35 @@
 
 /*comienzo pag galeria*/
 .pagTres{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
+}
+
+.imgFondo{
+    background: url(./galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    object-fit: cover;
+    border-end-end-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 .pagTres__titulo{
     margin: 5px;
     padding: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: rgb(170, 68, 196);
-    text-align: center;
-    font-size: 25px;
+    color:  rgb(63, 62, 62);
+    font-size: 30px;
 }
 .pagTres__secUno{
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin: auto;
+    flex-direction: column;
+    margin: 10px;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to right top, #60c0d4, #6ebfe6, #8abcf1, #adb6f3, #cfb0ec);
 }
 .pagTres__secUno__galeria{
     margin: 10px;
@@ -241,35 +245,68 @@
     font-size: 20px;
     color: rgb(14, 15, 15);
     text-align: justify;
-    text-decoration:underline double;
 
 }
-
-/*video sala lactantes*/
+/*video explicando metodo montessori*/
+.pagTres__secUno__frase{
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: 6px outset rgba(255,80,216,0.77);
+    background: rgba(255, 255, 255, 0.342);
+    border-radius: 55px 55px 55px 55px;
+    -webkit-border-radius: 55px 55px 55px 55px;
+    -moz-border-radius: 55px 55px 55px 55px;
+}
 .pagTres__secUno__video{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100%;
-    margin: 20px;
-    box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
-    -webkit-box-shadow: 15px 18px 26px 3px rgba(12, 12, 11, 0.877);
-    -moz-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
+    margin: auto;
+    padding: 20px;
     position:relative;
 }
 
 
+
 /* estilado de la galeria de imagenes con grid*/
-.pagTres__secUno__grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px;
+.pagTres__secUno__galeria{
+    font-weight: lighter, bold;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgba(189, 53, 159, 0.77);
+    text-align: start;
 
 }
 
-.pagTres__secDos__imag{
-    width: auto;
-    margin: 10px;
+.pagTres__secUno__grilla{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 8px;
+     
+}
+.boxs{
+    box-sizing: content-box;
+    width: 80%;
+    margin: 8px;
     padding: 5px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(179, 55, 152, 0.77);;
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius:10px 10px 10px 10px;
+}
+.pagTres__secDos__imag{
+    width: 100%;
+    padding: 10px;
     object-fit: cover;
 }
 
