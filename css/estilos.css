@@ -14,7 +14,8 @@
 
 /*esta clase tiene el estilo principal de la pag  HEADER */
 .header{
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    /*background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);*/
+    background-color:  #f1e7e2;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -27,9 +28,9 @@
 .header__listaNav{
     display:flex;
     justify-content: flex-end;
+    align-items: end;
     list-style: none;
-    margin:10px;
-    padding: 10px;
+
 }
 /*boton nav*/ /*hijo*/
 .header__listaNav__linkNav{
@@ -37,34 +38,43 @@
     padding: 4px;
     text-align:center;
     text-decoration: none;
-    color: black;
-    font-size: 15px;
-    border: 1px solid white;
+    font-weight:lighter;
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    /*border: 1px solid  #ff9770;;
     border-radius: 5px;
-    background-color: rgb(245, 233, 235);
+    background-color: #f1e7e2ad;*/
+}
+.header__listaNav__linkNav:hover{
+    text-decoration: underline;
+    color: #f8a485;
+    background-color: rgba(252, 238, 227, 0.384);
+
 }
 /*main del index*/ /*se adapta al contenido que tiene de largo width*/
 .inicio{
-    background: url(./fondoinicio.jpg);
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-repeat: no-repeat;
+    background-color:  rgb(247, 242, 246);
 }
 /*seccion 1 presentacion*/ 
 .inicio__secUno{
-    margin: 10px;
-    padding: 10px;
+    background: url(./inicio2o.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    object-fit: cover;
+    border-end-start-radius: 75px;
+    border-end-end-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 .inicio__secUno__titulo{
     margin: 5px;
     padding: 0px;
     font-family: 'Courgette', cursive;
-    color:  rgb(170, 68, 196);
+    color:  rgb(0, 0, 0);
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
 }
 .inicio__secUno__subtitulo{
     color: black;
@@ -73,10 +83,17 @@
     font-weight: bold;
 }
 .inicio__secUno__textUno{
-    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
     padding: 10px;
     color: rgb(5, 5, 5);
     text-align: justify;
+    font-size: 18px;
 }
 /*seccion 2 informacion */
 .inicio__secDos{
@@ -91,21 +108,20 @@
 
 .inicio__secDos__box{
     display: flex;
-    width: 28%;
+    width: 30%;
     flex-direction: column;
-    margin: 15px;
+    margin-bottom: 40px;
     padding: 15px;
     box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
     -webkit-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
     -moz-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
-    border: 6px solid rgb(198, 152, 202);
+    border: 6px solid #ff9770;
     border-radius: 10px;
-    background:rgba(235, 233, 233, 0.678);
+    background:#f5cabb48;
     align-items: center;
 
 }
 .inicio__secDos__box:hover{
-    background-color: white;
     transform: scale(1.1);
 }
 
@@ -134,7 +150,7 @@
 
 /*footer del index*/ 
 .footer{
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    background-color: #f1e7e2af;;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -479,37 +495,72 @@
 
 /*comiendo pag contacto*/
 .pagCinco{
-    display: grid;
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
+    background-color:  rgb(247, 242, 246);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
 }
-/*primera seccion*/ 
+/*primera seccion*/
+.pagCinco__secUno{
+    background: url(./admisione.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 50vh;
+    object-fit: cover;
+    border-end-end-radius: 75px;
+    border-end-start-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+} 
 .pagCinco__secUno__titulo{
-    margin: 5px;
+    margin-left: 40px;
+    margin-top: 150px;
     padding: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color:  rgb(170, 68, 196);
+    color:  rgb(63, 62, 62);
+    font-size: 30px;
+}
+.pagCinco__secUno__text{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
     text-align: center;
-    font-size: 25px;
 }
 /*segunda seccion de formulario*/
 .pagCinco__secDos__subtitulo{
-    margin: 5px;
-    padding: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(24, 22, 23);
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #3883d8;
     text-align: justify;
     font-size: 25px;
+    position: relative;
+}
+.pagCinco__secDos__text{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
 }
 .pagCinco__secDos__formulario{
     width: 50%;
     display: block;
-    color: rgb(107, 28, 103);
+    color: rgb(0, 0, 0);
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 25px;
     font-size: 15px;
+
 }
+.text__form{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
 
 /*media queries para mobile - pag 1 y 2 - de bootstrap solo pude utilizar los conteiner fluid porque se me cambia en el diseño desktop cuadno utilizo container-sm (etc)- */
 @media screen and (max-width: 768px) and (min-width: 576px){

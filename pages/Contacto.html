@@ -19,7 +19,7 @@
                     <img src="../assets/img/logo of.png" width="100px" alt="logo rincon de los sueños">
                 </div>
                 <nav>
-                    <ul class="header__listaNav">
+                    <ul class="header__listaNav container-md ">
                         <li> <a class="header__listaNav__linkNav" href="../index.html"> Inicio</a></li>
                         <li> <a class="header__listaNav__linkNav" href="./Actividades.html"> Nuestra Propuesta</a></li>
                         <li> <a class="header__listaNav__linkNav" href="./Galeria.html"> Galeria</a></li>
@@ -30,39 +30,59 @@
             </header>
             <main class="pagCinco">
                 <section class="pagCinco__secUno">
-                    <!--explicar como es la inscripcion que se requiere-->
-                    <h1 class="pagCinco__secUno__titulo">¿Cómo inscribir a mi hijo/a?</h1>
-                    <!--use estilo del index-->
-                    <p class="inicio__secUno__textUno">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure sed quod itaque molestias culpa totam dolorum eos, officia beatae reprehenderit vero repudiandae, neque quas soluta quia porro cumque sint!</p>
+                    <div>
+                        <h1 class="pagCinco__secUno__titulo"> <strong> ADMISIONES</strong></h1>
+                    </div>
                 </section>
+                <div class="pagCinco__secUno__text">
+                    <p>Creemos que la elección de una escuela para sus hijos es   una de las decisiones más importantes. <br/>
+                    En este sentido, llevamos adelante un delicado proceso de admisión que busca conocer si nuestra propuesta educativa es la más adecuada para quien se postula y su familia. Nuestro objetivo es establecer un vínculo a largo plazo entre Jardín-Familia.</p>
+                </div>
                 <section class="pagCinco__secDos">
                     <!--formulario de contacto, cita o consulta-->
-                    <h2 class="pagCinco__secDos__subtitulo">Registrar una Cita</h2>
-                    <p class="inicio__secUno__textUno">Para conecer nuestra disponibilidad, nuestras instalaciones, fechas de ingreso, etc. </p>
+                    <h2 class="pagCinco__secDos__subtitulo"><strong> Reservar una Cita</strong></h2>
+                    <p class="pagCinco__secDos__text"> Complete el formulario y agende una cita con nosotros. </p>
                     <div class="pagCinco__secDos__formulario">
+                        <p class="text__form">Datos del Padre/Madre/Tutor:</p>
                         <form action=""> 
-                            <div class="pagCinco__secDos__formulario">
-                                <label for="Nombre"> Nombre:</label>
-                                <input type="text" placeholder="Escriba su Nombre" required>
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label"> Nombre:</label>
+                                <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Nombre" required>
+                                </div>
                             </div>
-                            <div class="pagCinco__secDos__formulario">
-                                <label for="Apellido"> Apellido:</label>
-                                <input type="text" placeholder="Escriba su Apellido" required> 
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Apellido:</label>
+                                <div class="col-sm-10">
+                                <input  type="text" readonly class="form-control-plaintext" id="staticEmail" value="Apellido" required>
+                                </div>
                             </div>
-                            <div class="pagCinco__secDos__formulario">
-                                <label for="DNI"> DNI:</label>
-                                <input type="text" placeholder="Escriba su DNI" required> 
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Domicilio:</label>
+                                <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value=" Buenos Aires 1925" required>
+                                </div>
                             </div>
-                            <div class="pagCinco__secDos__formulario">
-                                <label for="Email"> Email:</label>
-                                <input type="text" placeholder="Escriba su Email" required> 
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Telefono:</label>
+                                <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="cog. de area y número" required>
+                                </div>
                             </div>
-                            <div class="pagCinco__secDos__formulario">
-                                <textarea cols="50" rows="15" placeholder="Escriba su consulta" required></textarea>
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
+                                <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com" required>
+                                </div>
                             </div>
-                            <div>
-                                <input type="submit" value="Enviar">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Consultas:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Enviar Datos</button>
+                            </div>
+                            
                         </form>
                     </div>
                     
