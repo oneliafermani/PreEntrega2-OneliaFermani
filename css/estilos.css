@@ -315,58 +315,168 @@
 
 /*comienzo pag quienes somos*/
 .pagCuatro{
-    display: grid;
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
-
+    background-color:  rgb(247, 242, 246);
+}
+.pagCuatro__secUno{
+    background: url(./pexels-fauxels-3184419.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 50vh;
+    object-fit: cover;
+    border-end-end-radius: 75px;
+    border-end-start-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 .pagCuatro__secUno__titulo{
-    margin: 5px;
+    margin-left: 40px;
+    margin-top: 50px;
     padding: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: rgb(170, 68, 196);
-    text-align: center;
-    font-size: 25px;
+    color:  rgb(63, 62, 62);
+    font-size: 30px;
 }
 
-/*presentacion de las docentes*/
+/*presentacion personal institucional*/ 
 .pagCuatro__secDos{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 15px;
+}/*ver propiedades*/
+
+.pagCuatro__div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+
 }
-.pagCuatro__secDos__titulo{
+.pagCuatro__div__titulo{
+    width: 100%;
     margin: 20px;
     padding: 20px;
     color: black;
-    text-align: justify;
+    text-align: center;
     font-size: 20px;
-}
-.pagCuatro__secDos__box{
-    display: inline-block;
-    width: 300px;
-    height: 200px;    
-    margin: 15px;
-    padding: 5px;
-    border: 2px solid rgba(152, 4, 221, 0.726);
-    text-align: justify;
-    color: black;
-    background:white;
+    justify-content: center;
     position: relative;
-    
+}
+.pagCuatro__div__img{
+    width: 28%;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border-radius:100%;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
+}
+.pagCuatro__div__name{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.pagCuatro__div__text{
+    display: flex;
+    justify-content: baseline;
+    margin: auto;
+    width: 60%;
+    font-size: 15px;
+    text-align: justify;
 }
 
-.pagCuatro__secTres__subtitulo{
+/*equipo docente*/
+.pagCuatro__divDos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.pagCuatro__divDos__titulo{
+    width: 100%;
     margin: 20px;
     color: black;
-    text-align: justify;
+    text-align: center;
     font-size: 20px;
+    justify-content: center;
+    position: relative;
+}
+.pagCuatro__divDos__img{
+    margin:50px;
+    width: 35%;
+    border-radius:20%;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
+    object-fit: cover;
+}
+.pagCuatro__divDos__text{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    font-size: 15px;
+
+}
+
+/*docentes*/
+.pagCuatro__divTres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.pagCuatro__divTres__box{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: auto;
+    border: 3px solid rgba(0, 0, 0, 0.534);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.pagCuatro__divTres__img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 90%;
+    margin: 20px;
+    border-radius: 20%;
+}
+.pagCuatro__divTres__text{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*ubicacion*/
+.pagCuatro__secTres{
+    display: flex;
+    flex-direction: column;
+}
+.pagCuatro__secTres__subtitulo{
+    width: 100%;
+    margin: 20px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    position: relative;
 }
 .pagCuatro__secTres__mapa{
     width: 50%;
-    margin: 20px;
-    border: 1px solid white;
+    margin: auto;
+    margin-bottom: 40px;
+    
 }
+
 /*comiendo pag contacto*/
 .pagCinco{
     display: grid;
