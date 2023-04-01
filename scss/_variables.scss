@@ -1,0 +1,38 @@
+/*variables*/
+/*colores*/
+$color_primario: rgb(247, 242, 246);
+$color_principal: #f1e7e2;
+$color_negro: black;
+
+/*contenedores*/
+$contenedor_flex: flex;
+$contenedor_fila: row;
+$contenedor_columna:column;
+$justify-center: center;
+$justify-around: space-around;
+$justify-end: end;
+$justify-start: start;
+$align-center:center;
+$align-start: flex-start;
+$align-end: flex-end;
+
+/*fuentes*/
+$fuente_principal: 'Montserrat', sans-serif;
+$fuente-alternativa: 'Courgette', cursive;
+$fuente-bold: bold;
+
+/*tamaño de textos*/
+$sizes:(
+    10: 10px,
+    13: 13px,
+    15: 15px,
+    18: 18px
+    20: 20px,
+    25: 25px,
+    30: 30px,
+    60: 60px,
+    );
+
+/*textos*/
+$text-center: center;
+$text-justify: justify;

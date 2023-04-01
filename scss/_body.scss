@@ -1,0 +1,84 @@
+/*neesting*/
+.header{
+    /*background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);*/
+    background-color: $color_principal;
+    display: $contenedor_flex;
+    justify-content: space-between;
+    align-items: $align-end;
+    .headerLogo{
+        margin: 15px;
+    }
+    .header__listaNav{
+        display:$contenedor_flex;
+        justify-content: $justify-end;
+        align-items: $align-end;
+        list-style: none;
+        .header__listaNav__linkNav{
+            margin: 5px;
+            padding: 4px;
+            text-align: $text-center;
+            text-decoration: none;
+            font-weight:lighter;
+            color: rgb(32, 32, 32);
+            font-size: 18px;
+        }
+        .header__listaNav__linkNav:hover{
+            text-decoration: underline;
+            color: #f8a485;
+            background-color: rgba(252, 238, 227, 0.384);
+        }
+    }
+}
+
+/*esta clase tiene el estilo principal de la pag  HEADER */
+/*.header{
+    background-color: $color_principal;
+    display: $contenedor_flex;
+    justify-content: space-between;
+    align-items: $align-end;
+}
+.headerLogo{
+    margin: 15px;
+}
+/* estilos del navegador*/ /*padre*/
+/*.header__listaNav{
+    display:$contenedor_flex;
+    justify-content: $justify-end;
+    align-items: $align-end;
+    list-style: none;
+
+}
+/*boton nav*/ /*hijo*/
+/*.header__listaNav__linkNav{
+    margin: 5px;
+    padding: 4px;
+    text-align: $text-center;
+    text-decoration: none;
+    font-weight:lighter;
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    /*border: 1px solid  #ff9770;;
+    border-radius: 5px;
+    background-color: #f1e7e2ad;*/
+
+/*.header__listaNav__linkNav:hover{
+    text-decoration: underline;
+    color: #f8a485;
+    background-color: rgba(252, 238, 227, 0.384);
+
+}*/
+/*ANIDAR LAS MEDIA Q*/
+@media screen and (max-width: 768px) and (min-width: 576px){
+    .header{
+        display: grid;
+    }
+    .headerLogo{
+        padding: 5px;
+    }
+    .header__listaNav{
+        width: 100%;
+    }
+    .header__listaNav__linkNav{
+        font-size: 13px;
+    }
+}

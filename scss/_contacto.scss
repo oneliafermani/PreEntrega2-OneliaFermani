@@ -1,0 +1,134 @@
+/*neesting*/
+.pagCinco{
+    background-color:  $color_primario;
+    display: $contenedor_flex;
+    flex-direction: $contenedor_columna;
+    flex-wrap: wrap;
+    .pagCinco__secUno{
+        background: url(./admisione.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 50vh;
+        object-fit: cover;
+        border-end-end-radius: 75px;
+        border-end-start-radius: 75px;
+        display: $contenedor_flex;
+        flex-direction: $contenedor_columna;
+        justify-content: $justify-start;
+        .pagCinco__secUno__titulo{
+            margin-left: 40px;
+            margin-top: 150px;
+            padding: 5px;
+            font-family: $fuente_principal;
+            font-weight: $fuente-bold;
+            color:  rgb(63, 62, 62);
+            font-size: map-get($sizes,30);
+        }
+        .pagCinco__secUno__text{
+            display:$contenedor_flex;
+            flex-direction: $contenedor_fila;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            font-size: map-get($sizes,18);
+            text-align: $text-center;
+        }
+    } 
+    .pagCinco__secDos{
+        /*segunda seccion de formulario*/
+        .pagCinco__secDos__subtitulo{
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #3883d8;
+            text-align:$text-justify;
+            font-size: map-get($sizes,25);
+            position: relative;
+        }
+        .pagCinco__secDos__text{
+            display: $contenedor_flex;
+            flex-direction: $contenedor_fila;
+            margin-left: 20px;
+        }
+        .pagCinco__secDos__formulario{
+            width: 50%;
+            display: block;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+            margin-left: 25px;
+            font-size: map-get($sizes,15);
+        }
+        .text__form{
+            text-decoration:underline;
+            font-weight: $fuente-bold;
+        }
+    }
+}
+
+/*comiendo pag contacto*/
+/*.pagCinco{
+    background-color:  $color_primario;
+    display: $contenedor_flex;
+    flex-direction: $contenedor_columna;
+    flex-wrap: wrap;
+    
+}
+/*primera seccion*/
+/*.pagCinco__secUno{
+    background: url(./admisione.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 50vh;
+    object-fit: cover;
+    border-end-end-radius: 75px;
+    border-end-start-radius: 75px;
+    display: $contenedor_flex;
+    flex-direction: $contenedor_columna;
+    justify-content: $justify-start;
+} 
+.pagCinco__secUno__titulo{
+    margin-left: 40px;
+    margin-top: 150px;
+    padding: 5px;
+    font-family: $fuente_principal;
+    font-weight: $fuente-bold;
+    color:  rgb(63, 62, 62);
+    font-size: $fuente-xl;
+}
+.pagCinco__secUno__text{
+    display:$contenedor_flex;
+    flex-direction: $contenedor_fila;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: $text-center;
+}
+/*segunda seccion de formulario*/
+/*.pagCinco__secDos__subtitulo{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #3883d8;
+    text-align:$text-justify;
+    font-size: $fuente-l;
+    position: relative;
+}
+.pagCinco__secDos__text{
+    display: $contenedor_flex;
+    flex-direction: $contenedor_fila;
+    margin-left: 20px;
+}
+.pagCinco__secDos__formulario{
+    width: 50%;
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: $fuente_s;
+
+}
+.text__form{
+    text-decoration:underline;
+    font-weight: $fuente-bold;
+}*/

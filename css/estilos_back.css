@@ -93,17 +93,16 @@
     padding: 10px;
     color: rgb(5, 5, 5);
     text-align: justify;
-    font-size: 16px;
+    font-size: 18px;
 }
 /*seccion 2 informacion */
 .inicio__secDos{
-    width: 95%;
-    display: flex;
-    margin: auto;
-    margin-top: 30px;
-    flex-direction: row;
-    flex-wrap: wrap; 
     justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
     position: relative;
 }
 
@@ -112,12 +111,12 @@
     width: 30%;
     flex-direction: column;
     margin-bottom: 40px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
     -webkit-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
     -moz-box-shadow: 15px 18px 26px 3px rgba(110,108,90,0.63);
-    border: 4px dotted rgba(250, 99, 30, 0.808);
-    border-radius: 15px;
+    border: 6px solid #ff9770;
+    border-radius: 10px;
     background:#f5cabb48;
     align-items: center;
 
@@ -130,7 +129,7 @@
     color: rgb(29, 25, 34);
     align-items: flex-start;
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration:underline;
     position: relative;
@@ -139,11 +138,15 @@
 .inicio__secDos__box__text{
     color: rgb(45, 73, 73);
     text-align: justify;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     
 }
+.inicio__secDos__img{
+    object-fit: cover;
+    width: 100%;
 
+}
 
 /*footer del index*/ 
 .footer{
