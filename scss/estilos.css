@@ -253,8 +253,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-end-end-radius: 75px;
   border-end-start-radius: 75px;
   display: flex;
@@ -313,6 +312,13 @@
 }
 
 /* estilado de la galeria de imagenes con grid*/
+.pagTres__secDos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .pagTres__secDos__galeria {
   margin: 15px;
   font-weight: lighter, bold;
@@ -323,6 +329,7 @@
 
 .pagTres__secDos__grilla {
   display: grid;
+  margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5px 5px;
@@ -331,19 +338,15 @@
 
 .boxs {
   box-sizing: content-box;
-  width: 90%;
-  margin: auto;
-  padding: 0px;
+  width: 80%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgba(68, 19, 58, 0.377);
-  background-color: rgb(0, 0, 0);
-  border-radius: 10px 10px 10px 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 
 /*acomodor grilla o con bs la galeria*/
 /*comienzo pag quienes somos*/

@@ -59,37 +59,52 @@
             position:relative;
         }
     }
-    .pagTres__secDos__galeria{
-        margin: 15px;
-        font-weight: lighter, $fuente-bold;
-        font-size: map-get($sizes,25);;
-        color:rgba(189, 53, 159, 0.77);
-        text-align: start;
+    .pagTres__secDos{
+        display: $contenedor_flex;
+        flex-direction: $contenedor_fila;
+        flex-wrap: wrap;
+        justify-content: $justify-center;
+        align-items: $align-center;
+        .pagTres__secDos__galeria{
+            margin: 15px;
+            padding: 10px;
+            font-weight: lighter, $fuente-bold;
+            font-size: map-get($sizes,25);;
+            color:rgba(189, 53, 159, 0.77);
+        
+        }
         .pagTres__secDos__grilla{
-            display: grid; 
+            display: grid;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;
             grid-template-columns:  1fr 1fr 1fr; 
             grid-template-rows:    1fr 1fr 1fr 1fr ; 
             gap: 5px 5px; 
-        /*agregar areas segun que use*/
+            .boxs{
+                box-sizing: content-box;
+                width: 80%;
+                padding: 10px;
+                display: $contenedor_flex;
+                flex-direction: $contenedor_columna ;
+                justify-content: $justify-center;
+                align-items: $align-center;
+                object-fit: cover;
+            }
         }
-        
-        .boxs{
-            box-sizing: content-box;
-            width: 90%;
-            margin: auto;
-            padding: 0px;
-            display: $contenedor_flex;
-            flex-direction: $contenedor_columna ;
-            justify-content: $justify-center;
-            align-items: $align-center;
-            border: 3px solid rgba(68, 19, 58, 0.377);;
-            background-color: rgb(0, 0, 0);
-            border-radius:10px 10px 10px 10px;
-            object-fit: cover;
-        }
-        
     }
-}
+}    
+    /*.pagTres__secDos__galeria{
+            margin: 15px;
+            padding: 10px;
+            font-weight: lighter, $fuente-bold;
+            font-size: map-get($sizes,25);;
+            color:rgba(189, 53, 159, 0.77);
+            text-align: start;
+        }*/
+
+        
+
 
 /*comienzo pag galeria*/
 /*.pagTres{
