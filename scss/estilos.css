@@ -218,14 +218,14 @@
   margin: 10px;
 }
 
-.pagDos__secDos__img1 {
+.pagDos__secDos__img--der {
   width: 80%;
   margin: 15px;
   border-end-start-radius: 75px;
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.pagDos__secDos__img2 {
+.pagDos__secDos__img--izq {
   width: 80%;
   margin: 15px;
   border-end-end-radius: 75px;
@@ -569,7 +569,7 @@
 /*segunda seccion de formulario*/
 .pagCinco__secDos__subtitulo {
   margin-top: 40px;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-bottom: 10px;
   color: #3883d8;
   text-align: justify;
@@ -580,7 +580,8 @@
 .pagCinco__secDos__text {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: 40px;
+
 }
 
 .pagCinco__secDos__formulario {
@@ -588,9 +589,10 @@
   display: block;
   color: rgb(0, 0, 0);
   margin-top: 10px;
-  margin-left: 25px;
+  margin-left: 40px;
   font-size: 15px;
 }
+
 
 .text__form {
   text-decoration: underline;
