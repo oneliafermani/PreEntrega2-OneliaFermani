@@ -44,6 +44,7 @@
   font-weight: lighter;
   color: rgb(32, 32, 32);
   font-size: 18px;
+  transform: perspective(1px) translateZ(0);
   /*border: 1px solid  #ff9770;;
   border-radius: 5px;
   background-color: #f1e7e2ad;*/

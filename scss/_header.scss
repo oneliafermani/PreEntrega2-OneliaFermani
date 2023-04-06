@@ -21,6 +21,7 @@
             font-weight:lighter;
             color: rgb(32, 32, 32);
             font-size: 18px;
+            transform: perspective(1px) translateZ(0);
         }
         .header__listaNav__linkNav:hover{
             text-decoration: underline;
@@ -30,6 +31,22 @@
     }
 }
 
+
+@media screen and (max-width: 768px) and (min-width: 576px){
+    .header{
+        display: grid;
+        .headerLogo{
+            padding: 5px;
+        }
+    }
+    .header__listaNav{
+        width: 100%;
+        .header__listaNav__linkNav{
+            font-size: 13px;
+        }
+    }
+    
+}
 /*esta clase tiene el estilo principal de la pag  HEADER */
 /*.header{
     background-color: $color_principal;
@@ -68,17 +85,3 @@
 
 }*/
 /*ANIDAR LAS MEDIA Q*/
-@media screen and (max-width: 768px) and (min-width: 576px){
-    .header{
-        display: grid;
-    }
-    .headerLogo{
-        padding: 5px;
-    }
-    .header__listaNav{
-        width: 100%;
-    }
-    .header__listaNav__linkNav{
-        font-size: 13px;
-    }
-}

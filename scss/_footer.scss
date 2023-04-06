@@ -5,11 +5,11 @@
     flex-direction: $contenedor_columna;
     justify-content: $justify-center;
     align-items: $align-center;
-}
-.footer__text{
+    .footer__text{
     margin: 3px;
     text-align: $text-center;
     font-size: small;
     font-family: $fuente_principal;
     color: $color_negro;
+    }
 }
