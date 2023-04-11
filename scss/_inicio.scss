@@ -88,6 +88,38 @@
 
 }
 
+@media screen and (max-width: 768px) and (min-width: 576px){
+    .inicio{
+        background: rgb(238, 237, 232);
+        .inicio__secUno{
+            .inicio__secUno__titulo{
+                font-size: map-get($sizes, 30);
+            }
+            .inicio__secUno__subtitulo{
+                font-size: map-get($sizes,15);
+            }
+            .inicio__secUno__textUno{
+                font-size: small;
+            }
+        }
+        
+        .inicio__secDos{
+            display: flex;
+            padding: 10px;
+            .inicio__secDos__box{
+                display: flex;
+                width: 80%;
+                margin: auto;
+            } 
+            .inicio__secDos__box__name{
+                font-size: map-get($sizes,10);
+            }
+            .inicio__secDos__box__text{
+                font-size: map-get($sizes,10);
+            }
+        }
+    }
+}
 /*main del index*/ /*se adapta al contenido que tiene de largo width*/
 /*.inicio{
     background-color:  $color_primario;
@@ -181,38 +213,7 @@
 }*/
 
 
-@media screen and (max-width: 768px) and (min-width: 576px){
-    .inicio{
-        background: rgb(238, 237, 232);
-        .inicio__secUno{
-            .inicio__secUno__titulo{
-                font-size: map-get($sizes, 30);
-            }
-            .inicio__secUno__subtitulo{
-                font-size: map-get($sizes,15);
-            }
-            .inicio__secUno__textUno{
-                font-size: small;
-            }
-        }
-        
-        .inicio__secDos{
-            display: flex;
-            padding: 10px;
-            .inicio__secDos__box{
-                display: flex;
-                width: 80%;
-                margin: auto;
-            } 
-            .inicio__secDos__box__name{
-                font-size: map-get($sizes,10);
-            }
-            .inicio__secDos__box__text{
-                font-size: map-get($sizes,10);
-            }
-        }
-    }
-}
+
     /*.inicio__secUno__titulo{
         font-size: $fuente-xl;
     }

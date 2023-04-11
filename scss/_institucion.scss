@@ -158,6 +158,69 @@
     }
 }
 
+@media screen and (max-width: 768px) and (min-width: 576px){
+    .pagCuatro{
+        .pagCuatro__secUno{
+            .pagCuatro__secUno__titulo {
+                margin-top: 5px;
+                font-size: 25px;
+                color: rgb(7, 0, 0);
+            }
+        }
+        .pagCuatro__secDos {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            .pagCuatro__div{
+                display: flex;
+                margin: 5px;
+                .pagCuatro__div__titulo {
+                    font-size: 20px;
+                }
+                .pagCuatro__div__img {
+                    width: 30%;
+                    margin-left: 10px;
+                }
+                .pagCuatro__div__name {
+                    margin-left: 30px;
+                    font-size: 10px;
+                }
+                .pagCuatro__div__text {
+                    width: 60%;
+                    margin-right: 10px;
+                    font-size: 12px;
+                }
+            }
+            .pagCuatro__divDos{
+                .pagCuatro__divDos__img {
+                    margin: 10px;
+                    width: 40%;
+                }
+                .pagCuatro__divDos__text {
+                    font-size: 12px;
+                }
+            }
+            .pagCuatro__divTres{
+                .pagCuatro__divTres__box {
+                    width: 20%;
+                    border: 2px solid rgba(0, 0, 0, 0.534);
+                    .pagCuatro__divTres__text {
+                        font-size: 10px;
+                    }
+                }
+            }
+        } 
+        .pagCuatro__secTres {
+            display: flex;
+            flex-direction: column;
+            .pagCuatro__secTres__mapa {
+                width: 80%;
+            }
+        }   
+    }
+}
+
+
+
 /*comienzo pag quienes somos*/
 /*.pagCuatro{
     background-color:  $color_primario;

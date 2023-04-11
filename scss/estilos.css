@@ -348,8 +348,6 @@
   object-fit: cover;
 }
 
-
-/*acomodor grilla o con bs la galeria*/
 /*comienzo pag quienes somos*/
 .pagCuatro {
   background-color: rgb(247, 242, 246);
@@ -360,8 +358,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-end-end-radius: 75px;
   border-end-start-radius: 75px;
   display: flex;
@@ -659,19 +656,21 @@
     justify-content: center;
     width: 40%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
+  /*propuesta*/
   .pagDos__secUno__titulo {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
     font-size: 25px;
+    color: rgb(7, 0, 0);
   }
-  .pagDos__secDos__img1 {
+  .pagDos__secDos__img--der {
     padding: auto;
     width: 70%;
   }
-  .pagDos__secDos__img2 {
+  .pagDos__secDos__img--izq{
     padding: auto;
     align-items: flex-end;
     width: 70%;
@@ -681,6 +680,148 @@
     margin: 10px;
     font-size: 12px;
   }
+
+  /*galeria*/
+  .pagTres__titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
+  .pagTres__secUno{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*video explicando metodo montessori*/
+  .pagTres__secUno__frase {
+    width: 90%;
+    font-size: 12px;
+  }
+  .pagTres__secUno__text{
+    font-size: 13px;
+  }
+
+  .pagTres__secDos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pagTres__secDos__galeria {
+    font-size: 15px;
+  }
+
+  .pagTres__secDos__grilla {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px 3px;
+    /*agregar areas segun que use*/
+  }
+
+  .boxs {
+    margin: auto;
+    object-fit: cover;
+  }
+
+  /*pagina institucion*/ 
+  .pagCuatro__secUno__titulo {
+    display: flex;
+    justify-content: start;
+    margin-top: 5px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
+  
+  /*presentacion personal institucional*/
+  .pagCuatro__secDos {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  } /*ver propiedades*/
+  .pagCuatro__div{
+    display: flex;
+    margin: 5px;
+  }
+  .pagCuatro__div__titulo {
+    font-size: 20px;
+  }
+  
+  .pagCuatro__div__img {
+    width: 30%;
+    margin-left: 10px;
+  }
+  
+  .pagCuatro__div__name {
+    margin-left: 30px;
+    font-size: 10px;
+  }
+  
+  .pagCuatro__div__text {
+    width: 60%;
+    margin-right: 10px;
+    font-size: 12px;
+
+  }
+  
+  /*equipo docente*/  
+  .pagCuatro__divDos__img {
+    margin: 10px;
+    width: 40%;
+  }
+  .pagCuatro__divDos__text {
+    font-size: 12px;
+  }
+
+  /*docentes*/
+  .pagCuatro__divTres__box {
+    width: 20%;
+    border: 2px solid rgba(0, 0, 0, 0.534);
+  }
+  .pagCuatro__divTres__text {
+    font-size: 10px;
+  }
+  
+  /*ubicacion*/
+  .pagCuatro__secTres {
+    display: flex;
+    flex-direction: column;
+  }
+  .pagCuatro__secTres__mapa {
+    width: 80%;
+  }
+  
+  /*admisiones*/
+  .pagCinco__secUno__titulo {
+    color: rgb(7, 0, 0);
+    font-size: 25px;
+  }
+  
+  .pagCinco__secUno__text {
+    font-size: 13px;
+  }
+  
+  /*segunda seccion de formulario*/
+  .pagCinco__secDos__subtitulo {
+    font-size: 20px;
+
+  }
+  
+  .pagCinco__secDos__text {
+    font-size: 15px;
+  
+  }
+  
+  .pagCinco__secDos__formulario {
+    width: 90%;
+  }
+  
+
 }
 /*media queries para tablets - algunas modificaciones*/
 @media screen and (max-width: 992px) and (min-width: 768px) {
