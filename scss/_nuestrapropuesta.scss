@@ -52,7 +52,7 @@
         }
     }
 }
-
+/*media queries mobile*/
 @media screen and (max-width: 768px) and (min-width: 576px){
     .pagDos{
         display: block;
@@ -83,7 +83,7 @@
             .pagDos__secDos__text{
                 width: 60%;
                 margin: 10px;
-                font-size: 12px;
+                font-size:  map-get($sizes,12);
             }
         }
     }
@@ -107,95 +107,4 @@
         }
     }
 }
-
-/*comienzo pag nuestra propuesta*/
-/*.pagDos{  
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    flex-wrap: wrap;
-    justify-content: $justify-center;
-    background-color:  $color_primario;
-}*/
-/* primera seccion*/
-/*.pagDos__secUno{
-    background: url(./fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    object-fit: cover;
-    border-end-start-radius: 75px;
-    border-end-end-radius: 75px;
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    justify-content:$justify-end;
-}*/
-/*.pagDos__secUno__titulo{
-    margin-left: 40px;
-    margin-bottom: 150px;
-    font-family: $fuente_principal;
-    font-weight:$fuente-bold;
-    color:  rgb(63, 62, 62);
-    font-size: $fuente-xl;
-}*/
-
-
-/*.pagDos__secDos{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_fila;
-    flex-wrap: wrap;
-    justify-content: $justify-center;
-    align-items: $align-center;
-    margin: 10px;
-}*/
-/*.pagDos__secDos__img1{
-    width: 80%;
-    margin: 15px;
-    border-end-start-radius: 75px;
-    border: 1px solid rgba(0, 0, 0, 0);
-}*/
-/*.pagDos__secDos__img2{
-    width: 80%;
-    margin: 15px;
-    border-end-end-radius: 75px;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-/*.pagDos__secDos__text{
-    width: 50%;
-    margin: 10px;
-    padding: 10px;
-    font-size: $fuente_s;
-    color: rgb(5, 5, 5);
-    text-align: $text-justify;
-}*/
-
-
-    /*.img{
-        display:$contenedor_flex;
-        flex-direction: $contenedor_fila;
-        align-items: $align-center;
-        justify-content: $justify-center;
-        width: 40%;
-        object-fit: contain;
-    }
-    .pagDos__secUno__titulo{
-        display: $contenedor_flex;
-        justify-content: $justify-center;
-        margin-bottom:5px ;
-        font-size: $fuente-l;
-    }
-    .pagDos__secDos__img1{
-        padding:auto;
-        width: 70%;
-    }
-    .pagDos__secDos__img2{
-        padding:auto;
-        align-items: $align-end;
-        width: 70%;
-    }
-    .pagDos__secDos__text{
-        width: 60%;
-        margin: 10px;
-        font-size: 12px;
-    }
-}*/
 

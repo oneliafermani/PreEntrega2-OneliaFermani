@@ -111,15 +111,6 @@
                 margin: auto;
                 border: 3px solid rgba(0, 0, 0, 0.534);
                 border-radius: 20px;
-                /*
-                display: $contenedor_flex;
-                flex-direction: $contenedor_columna;
-                width: 20%;
-                margin: auto;
-                border: 3px solid rgba(0, 0, 0, 0.534);
-                border-radius: 20px;
-                justify-content: $justify-center;
-                align-items: $align-center;*/
             }
             .pagCuatro__divTres__img{
                 display: $contenedor_flex;
@@ -160,10 +151,11 @@
 
 @media screen and (max-width: 768px) and (min-width: 576px){
     .pagCuatro{
+        background-size: contain;
         .pagCuatro__secUno{
             .pagCuatro__secUno__titulo {
                 margin-top: 5px;
-                font-size: 25px;
+                font-size: map-get($sizes,25);
                 color: rgb(7, 0, 0);
             }
         }
@@ -171,10 +163,10 @@
             margin-top: 5px;
             margin-bottom: 5px;
             .pagCuatro__div{
-                display: flex;
+                display: $contenedor_flex;
                 margin: 5px;
                 .pagCuatro__div__titulo {
-                    font-size: 20px;
+                    font-size: map-get($sizes,20);
                 }
                 .pagCuatro__div__img {
                     width: 30%;
@@ -182,12 +174,12 @@
                 }
                 .pagCuatro__div__name {
                     margin-left: 30px;
-                    font-size: 10px;
+                    font-size: map-get($sizes,10);
                 }
                 .pagCuatro__div__text {
                     width: 60%;
                     margin-right: 10px;
-                    font-size: 12px;
+                    font-size: map-get($sizes,12);
                 }
             }
             .pagCuatro__divDos{
@@ -196,7 +188,7 @@
                     width: 40%;
                 }
                 .pagCuatro__divDos__text {
-                    font-size: 12px;
+                    font-size: map-get($sizes,12);
                 }
             }
             .pagCuatro__divTres{
@@ -204,14 +196,14 @@
                     width: 20%;
                     border: 2px solid rgba(0, 0, 0, 0.534);
                     .pagCuatro__divTres__text {
-                        font-size: 10px;
+                        font-size: map-get($sizes,10);
                     }
                 }
             }
         } 
         .pagCuatro__secTres {
-            display: flex;
-            flex-direction: column;
+            display: $contenedor_flex;
+            flex-direction: $contenedor_columna;
             .pagCuatro__secTres__mapa {
                 width: 80%;
             }
@@ -219,168 +211,37 @@
     }
 }
 
-
-
-/*comienzo pag quienes somos*/
-/*.pagCuatro{
-    background-color:  $color_primario;
-}
-.pagCuatro__secUno{
-    background: url(./pexels-fauxels-3184419.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 50vh;
-    object-fit: cover;
-    border-end-end-radius: 75px;
-    border-end-start-radius: 75px;
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    justify-content: $justify-start;
-}
-.pagCuatro__secUno__titulo{
-    margin-left: 40px;
-    margin-top: 50px;
-    padding: 5px;
-    font-family: $fuente_principal;
-    font-weight: $fuente-bold;
-    color:  rgb(63, 62, 62);
-    font-size: $fuente-xl;
-}*/
-
-/*presentacion personal institucional*/ 
-/*.pagCuatro__secDos{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 15px;
-}/*ver propiedades*/
-
-/*.pagCuatro__div{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_fila;
-    flex-wrap: wrap;
-    margin: 10px;
-    justify-content: $justify-around;
-
-}
-.pagCuatro__div__titulo{
-    width: 100%;
-    margin: 20px;
-    padding: 20px;
-    color: $color_negro;
-    text-align: $text-center;
-    font-size: $fuente_m;
-    justify-content: $justify-center;
-    position: relative;
-}
-.pagCuatro__div__img{
-    width: 28%;
-    margin-left: 60px;
-    margin-bottom: 10px;
-    border-radius:100%;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
-}
-.pagCuatro__div__name{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_fila;
-    margin-left: 150px;
-    width: 100%;
-    font-size: 13px;
-    text-align: $text-center;
-    font-weight: $fuente-bold;
-
-}
-.pagCuatro__div__text{
-    display: $contenedor_flex;
-    justify-content: baseline;
-    margin: auto;
-    width: 60%;
-    font-size: $fuente_s;
-    text-align: $text-justify;
-}*/
-
-/*equipo docente*/
-/*.pagCuatro__divDos{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_fila;
-    flex-wrap: wrap;
-    justify-content: $justify-center;
-    margin-top: 40px;
-
-}
-.pagCuatro__divDos__titulo{
-    width: 100%;
-    margin: 20px;
-    color: $color_negro;
-    text-align: $text-center;
-    font-size: $fuente_m;
-    justify-content: $justify-center;
-    position: relative;
-}
-.pagCuatro__divDos__img{
-    margin:50px;
-    width: 35%;
-    border-radius:20%;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
-    object-fit: cover;
-}
-.pagCuatro__divDos__text{
-    width: 90%;
-    margin: auto;
-    text-align: $text-justify;
-    font-size: $fuente_s;
-
-}*/
-
-/*docentes*/
-/*.pagCuatro__divTres{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_fila;
-    flex-wrap: wrap;
-    justify-content: $justify-around;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-.pagCuatro__divTres__box{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    width: 20%;
-    margin: auto;
-    border: 3px solid rgba(0, 0, 0, 0.534);
-    border-radius: 20px;
-    justify-content: $justify-center;
-    align-items: $align-center;
-}
-.pagCuatro__divTres__img{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_fila;
-    flex-wrap:wrap;
-    width: 90%;
-    margin: 20px;
-    border-radius: 20%;
-}
-.pagCuatro__divTres__text{
-    text-align: $text-center;
-    font-size: 13px;
-    font-weight: $fuente-bold;
-}*/
-
-/*ubicacion*/
-/*.pagCuatro__secTres{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-}
-.pagCuatro__secTres__subtitulo{
-    width: 100%;
-    margin: 20px;
-    color: $color_negro;
-    text-align: $text-center;
-    font-size: $fuente_m;
-    justify-content: $justify-center;
-    position: relative;
-}
-.pagCuatro__secTres__mapa{
-    width: 50%;
-    margin: auto;
-    margin-bottom: 40px;
+/*media queries para tablets - algunas modificaciones*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .pagCuatro{
+        .pagCuatro__secUno{
+            .pagCuatro__secUno__titulo {
+                display: $contenedor_flex;
+                justify-content: $justify-start;
+                margin-top: 5px;
+                font-size: map-get($sizes,25);
+                color: rgb(7, 0, 0);
+            }
+        }
+        .pagCuatro__secDos{
+            .pagCuatro__div__img {
+                width: 30%;
+                margin-left: 10px;
+            }
+            .pagCuatro__div__name {
+                margin-left: 40px;
+                font-size: 10px;
+            }
+            .pagCuatro__div__text {
+                width: 60%;
+                margin-right: 10px;
+                font-size: 13px;
+                ;
+            }
+        }
+    }
     
-}*/
+}
+
+
+

@@ -127,7 +127,7 @@
   box-shadow: 15px 18px 26px 3px rgba(110, 108, 90, 0.63);
   -webkit-box-shadow: 15px 18px 26px 3px rgba(110, 108, 90, 0.63);
   -moz-box-shadow: 15px 18px 26px 3px rgba(110, 108, 90, 0.63);
-  border: 4px dotted rgba(250, 99, 30, 0.808);
+  border: 2px dotted rgba(250, 99, 30, 0.808);
   border-radius: 15px;
   background: rgba(245, 202, 187, 0.2823529412);
   align-items: center;
@@ -192,8 +192,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-end-start-radius: 75px;
   border-end-end-radius: 75px;
   display: flex;
@@ -237,7 +236,7 @@
   width: 50%;
   margin: 10px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(5, 5, 5);
   text-align: justify;
 }
@@ -314,9 +313,9 @@
 
 /* estilado de la galeria de imagenes con grid*/
 .pagTres__secDos{
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -330,16 +329,16 @@
 
 .pagTres__secDos__grilla {
   display: grid;
-  margin: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr  ;
   gap: 5px 5px;
   /*agregar areas segun que use*/
 }
 
 .boxs {
-  box-sizing: content-box;
-  width: 80%;
+  box-sizing:border-box;
+  width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -347,16 +346,20 @@
   align-items: center;
   object-fit: cover;
 }
-
+.boxs:hover{
+  transform: scale(1.1);
+}
 /*comienzo pag quienes somos*/
 .pagCuatro {
   background-color: rgb(247, 242, 246);
+  display: flex;
+  flex-direction: column;
 }
 
 .pagCuatro__secUno {
   background: url(./pexels-fauxels-3184419.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   height: 50vh;
   object-fit: cover;
   border-end-end-radius: 75px;
@@ -364,6 +367,8 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin: 0px;
+  padding: 0px;
 }
 
 .pagCuatro__secUno__titulo {
@@ -412,7 +417,7 @@
 .pagCuatro__div__name {
   display: flex;
   flex-direction: row;
-  margin-left: 150px;
+  margin-left: 120px;
   width: 100%;
   font-size: 13px;
   text-align: center;
@@ -424,7 +429,7 @@
   justify-content: baseline;
   margin: auto;
   width: 60%;
-  font-size: 15px;
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -460,7 +465,7 @@
   width: 90%;
   margin: auto;
   text-align: justify;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /*docentes*/
@@ -535,8 +540,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-end-end-radius: 75px;
   border-end-start-radius: 75px;
   display: flex;
@@ -597,19 +601,21 @@
   font-weight: bold;
 }
 
-/*media queries para mobile - pag 1 y 2 - de bootstrap solo pude utilizar los conteiner fluid porque se me cambia en el diseño desktop cuadno utilizo container-sm (etc)- */
+/*media queries para mobile*/
 @media screen and (max-width: 768px) and (min-width: 576px) {
   .header {
-    display: grid;
+    display: flex;
   }
   .headerLogo {
+    width: 20%;
     padding: 5px;
+
   }
   .header__listaNav {
-    width: 100%;
+    width: 80%;
   }
   .header__listaNav__linkNav {
-    font-size: 13px;
+    font-size: 11px;
   }
   .inicio {
     background: rgb(238, 237, 232);
@@ -621,16 +627,16 @@
     font-size: 15px;
   }
   .inicio__secUno__textUno {
-    font-size: small;
+    font-size: 13px;
   }
   .inicio__secDos {
-    display: block;
+    display: flex;
     margin: 10px;
     padding: 10px;
   }
   .inicio__secDos__box {
-    display: block;
-    width: 90%;
+    display: flex;
+    width: 80%;
   }
   .inicio__secDos__box__name {
     font-size: 10px;
@@ -641,6 +647,13 @@
   .pagDos {
     display: block;
   }
+  .pagDos__secUno__titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
   .pagDos__secDos {
     display: flex;
     flex-direction: row;
@@ -649,23 +662,7 @@
     vertical-align: baseline;
     margin: auto;
   }
-  .img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    -o-object-fit: contain;
-    object-fit: contain;
-  }
-  /*propuesta*/
-  .pagDos__secUno__titulo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-    font-size: 25px;
-    color: rgb(7, 0, 0);
-  }
+
   .pagDos__secDos__img--der {
     padding: auto;
     width: 70%;
@@ -682,6 +679,9 @@
   }
 
   /*galeria*/
+  .pagTres{
+    background-size: contain;
+  }
   .pagTres__titulo {
     display: flex;
     justify-content: center;
@@ -701,6 +701,10 @@
     width: 90%;
     font-size: 12px;
   }
+  .pagTres__secUno__video{
+    width: 90%;
+    padding: 0px;
+  }
   .pagTres__secUno__text{
     font-size: 13px;
   }
@@ -717,20 +721,26 @@
   }
 
   .pagTres__secDos__grilla {
-    width: 100vw;
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr ;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 3px 3px;
     /*agregar areas segun que use*/
   }
 
   .boxs {
-    margin: auto;
+    padding: 5px;
     object-fit: cover;
+  }
+  .boxs:hover{
+    transform: none;
   }
 
   /*pagina institucion*/ 
+  .pagCuatro{
+    background-size: contain;
+  }
   .pagCuatro__secUno__titulo {
     display: flex;
     justify-content: start;
@@ -797,10 +807,16 @@
   }
   
   /*admisiones*/
-  .pagCinco__secUno__titulo {
-    color: rgb(7, 0, 0);
-    font-size: 25px;
+  .pagCinco{
+      background-size: contain;
   }
+  .pagCinco__secUno__titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+    }
   
   .pagCinco__secUno__text {
     font-size: 13px;
@@ -825,6 +841,33 @@
 }
 /*media queries para tablets - algunas modificaciones*/
 @media screen and (max-width: 992px) and (min-width: 768px) {
+  .inicio {
+    background: rgb(238, 237, 232);
+  }
+  .inicio__secUno__titulo {
+    font-size: 30px;
+  }
+  .inicio__secUno__subtitulo {
+    font-size: 15px;
+  }
+  .inicio__secUno__textUno {
+    font-size: small;
+  }
+  .inicio__secDos {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+  }
+  .inicio__secDos__box {
+    display: flex;
+    width:80%;
+  }
+  .inicio__secDos__box__name {
+    font-size: 13px;
+  }
+  .inicio__secDos__box__text {
+    font-size: 13px;
+  }
   .pagDos__secDos {
     display: flex;
     flex-direction: row;
@@ -833,9 +876,64 @@
     vertical-align: baseline;
     margin: auto;
   }
+  .pagDos__secUno__titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
   .pagDos__secDos__text {
     width: 50%;
     margin: 10px;
     font-size: 15px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+  .pagTres__titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
+  .pagTres__secDos__grilla {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px 3px;
+    /*agregar areas segun que use*/
+  }
+  .pagCuatro__secUno__titulo {
+    display: flex;
+    justify-content: start;
+    margin-top: 5px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
+  .pagCuatro__div__img {
+    width: 30%;
+    margin-left: 10px;
+  }
+  
+  .pagCuatro__div__name {
+    margin-left: 40px;
+    font-size: 10px;
+  }
+  
+  .pagCuatro__div__text {
+    width: 60%;
+    margin-right: 10px;
+    font-size: 13px;
+    ;
+  }
+  .pagCinco__secUno{
+    display: flex;
+  }
+  .pagCinco__secUno__titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
+}

@@ -69,7 +69,7 @@
             margin: 15px;
             padding: 10px;
             font-weight: lighter, $fuente-bold;
-            font-size: map-get($sizes,25);;
+            font-size: map-get($sizes,25);
             color:rgba(189, 53, 159, 0.77);
         
         }
@@ -98,48 +98,54 @@
 /*media queries mobile*/
 @media screen and (max-width: 768px) and (min-width: 576px){
     .pagTres{
+        background-size: contain;
         .pagTres__titulo {
-            display: flex;
-            justify-content: center;
+            display: $contenedor_flex;
+            justify-content: $justify-center;
             margin-bottom: 5px;
-            font-size: 25px;
+            font-size: map-get($sizes,25);
             color: rgb(7, 0, 0);
         }
         .pagTres__secUno{
-            display: flex;
+            display: $contenedor_flex;
             margin: auto;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            flex-direction: $contenedor_columna;
+            justify-content: $justify-center;
+            align-items: $align-center;
             .pagTres__secUno__frase {
                 width: 90%;
-                font-size: 12px;
+                font-size: map-get($sizes,12);
             }
             .pagTres__secUno__video{
+                width: 90%;
+                padding: 0px;
                 .pagTres__secUno__text{
-                    font-size: 13px;
+                    font-size: map-get($sizes,13);
                 }
             }
             
         }
         .pagTres__secDos{
             width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: $contenedor_fila;
+            flex-direction: $contenedor_columna;
+            justify-content: $justify-center;
+            align-items: $align-center;
             .pagTres__secDos__galeria {
-                font-size: 15px;
+                font-size: map-get($sizes,15);
             }
             .pagTres__secDos__grilla {
-                width: 100vw;
                 display: grid;
+                margin: auto;
                 grid-template-columns: 1fr ;
-                grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                 gap: 3px 3px;
                 .boxs {
-                    margin: auto;
+                    margin: 5px;
                     object-fit: cover;
+                }
+                .boxs:hover{
+                    transform: none;
                 }
             }
             
@@ -147,122 +153,25 @@
     }
 }
 
-
-
-
-
-
-
-
-    /*.pagTres__secDos__galeria{
-            margin: 15px;
-            padding: 10px;
-            font-weight: lighter, $fuente-bold;
-            font-size: map-get($sizes,25);;
-            color:rgba(189, 53, 159, 0.77);
-            text-align: start;
-        }*/
-
-        
-
-
-/*comienzo pag galeria*/
-/*.pagTres{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    background-image: $color_primario;
+/*media queries para tablets - algunas modificaciones*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .pagTres{
+        .pagTres__titulo {
+            display: $contenedor_fila;
+            justify-content: $justify-center;
+            margin-bottom: 15px;
+            font-size: map-get($sizes,25);
+            color: rgb(7, 0, 0);
+        }
+        .pagTres__secDos{
+            .pagTres__secDos__grilla {
+                display: grid;
+                margin: auto;
+                grid-template-columns: 1fr 1fr  ;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                gap: 3px 3px;
+            }
+        }
+    }
+    
 }
-
-.imgFondo{
-    background: url(./galeria.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    object-fit: cover;
-    border-end-end-radius: 75px;
-    border-end-start-radius: 75px;
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    justify-content: $justify-end;
-}
-.pagTres__titulo{
-    margin-left: 40px;
-    margin-bottom: 150px;
-    padding: 5px;
-    font-family: $fuente_principal;
-    font-weight: $fuente-bold;
-    color:  rgb(63, 62, 62);
-    font-size: $fuente-xl;
-}
-.pagTres__secUno{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    margin: 10px;
-    padding: 10px;
-}
-.pagTres__secUno__galeria{
-    margin: 10px;
-    padding: 10px;
-    font-size: $fuente_m;
-    color: rgb(14, 15, 15);
-    text-align: $text-justify;
-
-}
-/*video explicando metodo montessori*/
-/*.pagTres__secUno__frase{
-    margin: 10px;
-    padding: 15px;
-    text-align:$text-center;
-    font-size: 18px;
-    font-family: $fuente_principal;
-    font-weight: $fuente-bold;
-    border: 6px outset rgba(255,80,216,0.77);
-    background: rgba(255, 255, 255, 0.342);
-    border-radius: 55px 55px 55px 55px;
-    -webkit-border-radius: 55px 55px 55px 55px;
-    -moz-border-radius: 55px 55px 55px 55px;
-}
-.pagTres__secUno__video{
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna;
-    justify-content: $justify-center;
-    align-items: $align-center;
-    margin: auto;
-    padding: 20px;
-    position:relative;
-}
-*/
-
-
-/* estilado de la galeria de imagenes con grid*/
-/*.pagTres__secDos__galeria{
-    margin: 15px;
-    font-weight: lighter, $fuente-bold;
-    font-size: $fuente-l;
-    color:rgba(189, 53, 159, 0.77);
-    text-align: start;
-}
-
-.pagTres__secDos__grilla{
-    display: grid; 
-    grid-template-columns:  1fr 1fr 1fr; 
-    grid-template-rows:    1fr 1fr 1fr 1fr ; 
-    gap: 5px 5px; 
-/*agregar areas segun que use*/
-
-/*.boxs{
-    box-sizing: content-box;
-    width: 90%;
-    margin: auto;
-    padding: 0px;
-    display: $contenedor_flex;
-    flex-direction: $contenedor_columna ;
-    justify-content: $justify-center;
-    align-items: $align-center;
-    border: 3px solid rgba(68, 19, 58, 0.377);;
-    background-color: rgb(0, 0, 0);
-    border-radius:10px 10px 10px 10px;
-    object-fit: cover;
-}*/
-
-/*acomodor grilla o con bs la galeria*/
