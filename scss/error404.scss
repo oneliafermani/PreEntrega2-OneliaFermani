@@ -1,0 +1,78 @@
+.error404{
+    display: $contenedor_flex;
+    flex-direction: $contenedor_fila;
+    background-image:  url(../scss//error1.jpg);
+    object-fit: cover;
+    height: 100vh;
+    .error__text{
+        background-color: rgba(255, 249, 240, 0.308);
+        height: 100vh;
+        width: 100vw;
+        display: $contenedor_flex;
+        flex-direction: $contenedor_columna;
+        .error__oops{
+            font-size: 80px;
+            font-family: fantasy;
+            color: #d48f61;
+            margin-top: 250px;
+            margin-left: 200px;
+        }
+        .error__exp{
+            display: $contenedor_flex;
+            justify-content: $justify-start;
+            font-size: 30px;
+            font-weight: bolder;
+            margin-left: 30px;
+            text-align: center;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px){
+    .error404{
+        background-image: none;
+        background-color: #ece7e4;
+        height: 100vh;
+        .error__text{
+            display: $contenedor_flex;
+            justify-content: $justify-center;
+            align-items: $align-center;
+            .error__oops{
+                font-size: 60px;
+                margin-top: 0px;
+                margin-left: 0px;
+                text-align: $text-center;
+            }
+            .error__exp{
+                font-size: 20px;
+                text-align: $text-center;
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .error404{
+        background-image: none;
+        background-color: #ece7e4;
+        height: 100vh;
+        .error__text{
+            display: $contenedor_flex;
+            justify-content: $justify-center;
+            align-items: $align-center;
+            .error__oops{
+                font-size: 60px;
+                margin-top: 0px;
+                margin-left: 0px;
+                text-align: $text-center;
+            }
+            .error__exp{
+                font-size: 20px;
+                text-align: $text-center;
+                margin-left: 0px;
+            }
+        }
+    }
+}

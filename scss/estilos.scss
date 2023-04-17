@@ -9,21 +9,14 @@
 @import "institucion.scss";
 @import "contacto.scss";
 @import "mixin";
-
+@import "error404.scss";
 
 /* estilo de fuente*/ 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Montserrat&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
 
 
-/*media queries para mobile - pag 1 y 2 - de bootstrap solo pude utilizar los conteiner fluid porque se me cambia en el diseño desktop cuadno utilizo container-sm (etc)- */
-/*@media screen and (max-width: 768px) and (min-width: 576px){}
 
-
-/*media queries para tablets - algunas modificaciones
-@media screen and (max-width: 992px) and (min-width: 768px){}
-
-/*falta hacer resto de paginas en sus respectivas carpetas*/
 
 
 
