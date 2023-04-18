@@ -6,10 +6,17 @@
     justify-content: $justify-center;
     align-items: $align-center;
     .footer__text{
-    margin: 3px;
+    margin-top: 25px;
     text-align: $text-center;
-    font-size: small;
+    font-size: map-get($sizes,13);
     font-family: $fuente_principal;
     color: $color_negro;
+    }
+    .footer__iconos{
+        display: $contenedor_flex;
+        flex-direction: $contenedor_fila;
+        justify-content: $justify-center;
+        padding: 5px;
+        color:$color_negro;
     }
 }
