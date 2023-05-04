@@ -48,50 +48,30 @@
                     <p class="pagCinco__secDos__text"> Complete el formulario y agende una cita con nosotros. </p>
                     <div class="pagCinco__secDos__formulario">
                         <p class="text__form">Datos del Padre/Madre/Tutor:</p>
-                        <form action="./Error404.html"> 
-                            <div class="cuadro mb-3 row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label"> Nombre:</label>
-                                <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Nombre" required>
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Apellido:</label>
-                                <div class="col-sm-10">
-                                <input  type="text" readonly class="form-control-plaintext" id="staticEmail" value="Apellido" required>
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Domicilio:</label>
-                                <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value=" Calle y Nro" required>
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Teléfono:</label>
-                                <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="cog. de area y número" required>
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
-                                <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com" required>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Consultas:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="col-auto">
-                                <input type="submit" value="Enviar Datos" class="btn btn-primary mb-3"></input>
-                                <input type="reset" value="Limpiar" class="btn btn-primary mb-3"></input>
-                            </div>
+                        <form class="form" action="./Error404.html" method="post">
+                            <label  class="label" for="nombre">Nombre:</label>
+                            <input class="input" type="text" id="nombre" name="nombre" required>
+                        
+                            <label  class="label" for="apellido">Apellido:</label>
+                            <input class="input" type="text" id="apellido" name="apellido" required>
+                        
+                            <label  class="label" for="direccion">Dirección:</label>
+                            <input class="input" type="text" id="direccion" name="direccion" required>
+                        
+                            <label  class="label" for="email">Email:</label>
+                            <input class="input" type="email" id="email" name="email" required>
+                        
+                            <label  class="label" for="telefono">Teléfono:</label>
+                            <input class="input" type="tel" id="telefono" name="telefono" required>
+                        
+                            <label class="label"  for="consulta">Consulta:</label>
+                            <textarea class="textarea"  id="consulta" name="consulta" rows="4" cols="50" required></textarea>
+                        
+                            <input class="submit" type="submit" value="Enviar Datos">
+                            <input class="submit" type="reset" value="Limpiar">
                         </form>
                     </div>
-                    
                 </section>
-                
                 </main>
             <footer class="footer">
                 <div class="footer__text"> 
