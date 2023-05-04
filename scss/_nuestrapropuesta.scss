@@ -30,11 +30,10 @@
         flex-direction: $contenedor_fila;
         flex-wrap: wrap;
         justify-content: $justify-center;
-        align-items: $align-center;
-        margin: 10px;
+        margin: 15px;
         .pagDos__secDos__img--der{
             width: 80%;
-            margin: 15px;
+            margin: 10px;
             border-end-start-radius: 75px;
             border: 1px solid rgba(0, 0, 0, 0);
         }
@@ -43,11 +42,11 @@
             border-end-end-radius: 75px;
         }
         .pagDos__secDos__text{
-            width: 50%;
-            margin: 10px;
+            width: 65%;
+            margin: 15px;
             padding: 10px;
-            font-size: map-get($sizes,12);
-            color: rgb(5, 5, 5);
+            font-size: map-get($sizes,18);
+            color: $color_negro;
             text-align: $text-justify;
         }
     }

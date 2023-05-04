@@ -1,6 +1,9 @@
 /*neesting*/
 .pagCuatro{
     background-color:  $color_primario;
+    display: $contenedor_flex;
+    flex-direction: $contenedor_columna;
+    overflow:hidden
     .pagCuatro__secUno{
         background: url(./pexels-fauxels-3184419.jpg);
         background-repeat: no-repeat;

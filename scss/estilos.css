@@ -141,24 +141,19 @@
   color: rgb(29, 25, 34);
   align-items: flex-start;
   text-align: left;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 18px;
   text-decoration: underline;
   position: relative;
 }
 
 .inicio__secDos__box__text {
-  color: rgb(45, 73, 73);
+  padding: 10px;
+  color: rgb(0, 0, 0);
   text-align: justify;
   font-size: 15px;
   position: relative;
 }
 
-.inicio__secDos__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
 
 /*footer del index*/
 .footer {
@@ -172,16 +167,16 @@
 .footer__text {
   margin-top: 25px;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: black;
 }
 .footer__iconos{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 5px;
-  color: black;
+}
+.icono{
+  margin: 10px;
 }
 
 /*comienzo pag nuestra propuesta*/
@@ -221,30 +216,32 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 10px;
+  margin: 15px;
 }
 
 .pagDos__secDos__img--der {
   width: 80%;
-  margin: 15px;
+  margin: 10px;
   border-end-start-radius: 75px;
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .pagDos__secDos__img--izq {
   width: 80%;
-  margin: 15px;
+  margin: 10px;
   border-end-end-radius: 75px;
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .pagDos__secDos__text {
-  width: 50%;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  margin: 15px;
   padding: 10px;
   font-size: 18px;
-  color: rgb(5, 5, 5);
+  color: black;
   text-align: justify;
 }
 
@@ -253,6 +250,7 @@
   display: flex;
   flex-direction: column;
   background-image: rgb(247, 242, 246);
+  overflow: hidden;
 }
 
 .imgFondo {
@@ -325,6 +323,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .pagTres__secDos__galeria {
   margin: 15px;
@@ -335,23 +334,24 @@
 }
 
 .pagTres__secDos__grilla {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 15px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr  ;
-  gap: 5px 5px;
-  /*agregar areas segun que use*/
+  justify-content: space-around;
+  position: relative;
 }
+
 
 .boxs {
   box-sizing:border-box;
-  width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  position: relative ;
 }
 .boxs:hover{
   transform: scale(1.1);
@@ -361,6 +361,7 @@
   background-color: rgb(247, 242, 246);
   display: flex;
   flex-direction: column;
+  overflow:hidden
 }
 
 .pagCuatro__secUno {
@@ -669,11 +670,13 @@
   }
   .inicio__secDos {
     display: flex;
+    flex-direction: row;
     margin: 10px;
     padding: 10px;
   }
   .inicio__secDos__box {
     display: flex;
+
     width: 80%;
   }
   .inicio__secDos__box__name {
@@ -914,6 +917,7 @@
   }
   .inicio__secDos {
     display: flex;
+    flex-direction: row;
     margin: 10px;
     padding: 10px;
   }

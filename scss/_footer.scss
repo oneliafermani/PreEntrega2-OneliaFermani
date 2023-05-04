@@ -8,15 +8,16 @@
     .footer__text{
     margin-top: 25px;
     text-align: $text-center;
-    font-size: map-get($sizes,13);
+    font-size: map-get($sizes,15);
     font-family: $fuente_principal;
     color: $color_negro;
     }
     .footer__iconos{
         display: $contenedor_flex;
         flex-direction: $contenedor_fila;
-        justify-content: $justify-center;
-        padding: 5px;
-        color:$color_negro;
+        .icono{
+            margin: 10px;
+        }
     }
 }
+

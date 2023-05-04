@@ -3,6 +3,7 @@
     display: $contenedor_flex;
     flex-direction: $contenedor_columna;
     background-image: $color_primario;
+    overflow: hidden;
     .imgFondo{
         background: url(./galeria.jpg);
         background-repeat: no-repeat;
@@ -60,36 +61,35 @@
         }
     }
     .pagTres__secDos{
+        width: 100%;
         display: $contenedor_flex;
         flex-direction: $contenedor_fila;
         flex-wrap: wrap;
         justify-content: $justify-center;
         align-items: $align-center;
+        overflow: hidden;
         .pagTres__secDos__galeria{
             margin: 15px;
-            padding: 10px;
             font-weight: lighter, $fuente-bold;
             font-size: map-get($sizes,25);
             color:rgba(189, 53, 159, 0.77);
         
         }
         .pagTres__secDos__grilla{
-            display: grid;
-            margin: auto;
-            justify-content: space-around;
-            align-items: center;
-            grid-template-columns:  1fr 1fr 1fr; 
-            grid-template-rows:    1fr 1fr 1fr 1fr ; 
-            gap: 5px 5px; 
+            display: $contenedor_flex;
+            flex-direction: $contenedor_fila;
+            margin: 15px;
+            justify-content: $justify-around;
+            position: relative; 
             .boxs{
                 box-sizing: content-box;
-                width: 80%;
                 padding: 10px;
                 display: $contenedor_flex;
                 flex-direction: $contenedor_columna ;
                 justify-content: $justify-center;
                 align-items: $align-center;
                 object-fit: cover;
+                position: relative;
             }
         }
     }

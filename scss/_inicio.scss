@@ -105,6 +105,7 @@
         
         .inicio__secDos{
             display: $contenedor_flex;
+            flex-direction: $contenedor_fila;
             padding: 10px;
             .inicio__secDos__box{
                 display:$contenedor_flex;
@@ -136,6 +137,7 @@
         }
         .inicio__secDos {
             display: $contenedor_flex;
+            flex-direction: $contenedor_fila;
             margin: 10px;
             padding: 10px;
             .inicio__secDos__box {
