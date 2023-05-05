@@ -59,6 +59,7 @@
 /*main del index*/ /*se adapta al contenido que tiene de largo width*/
 .inicio {
   background-color: rgb(247, 242, 246);
+  margin: 0px;
 }
 
 /*seccion 1 presentacion*/
@@ -68,7 +69,7 @@
   background-size: cover;
   height: 50vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-end-start-radius: 75px;
   border-end-end-radius: 75px;
   display: flex;
@@ -157,6 +158,7 @@
 
 /*footer del index*/
 .footer {
+  margin: 0px;
   background-color: #f1e7e2;
   display: flex;
   flex-direction: column;
@@ -400,7 +402,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 10px;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .pagCuatro__div__titulo {
@@ -415,9 +418,8 @@
 }
 
 .pagCuatro__div__img {
-  width: 25%;
-  margin-left: 60px;
-  margin-bottom: 10px;
+  width: 350px;
+  margin: auto;
   border-radius: 100%;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
 }
@@ -425,7 +427,8 @@
 .pagCuatro__div__name {
   display: flex;
   flex-direction: row;
-  margin-left: 120px;
+  justify-content: center;
+  margin: 15px;
   width: 100%;
   font-size: 13px;
   text-align: center;
@@ -434,9 +437,8 @@
 
 .pagCuatro__div__text {
   display: flex;
-  justify-content: baseline;
   margin: auto;
-  width: 60%;
+  width: 100%;
   font-size: 18px;
   text-align: justify;
 }
@@ -465,12 +467,11 @@
   width: 35%;
   border-radius: 20%;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .pagCuatro__divDos__text {
-  width: 90%;
+  width: 100%;
   margin: auto;
   text-align: justify;
   font-size: 18px;
@@ -491,10 +492,11 @@
   flex-direction: column;
   width: 20%;
   margin: auto;
-  border: 3px solid rgba(0, 0, 0, 0.534);
+  border: 3px solid rgb(36, 35, 35);
   border-radius: 20px;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 .pagCuatro__divTres__img {
@@ -509,7 +511,8 @@
 .pagCuatro__divTres__text {
   text-align: center;
   font-size: 13px;
-  font-weight: bold;
+  font-weight:bolder ;
+  color: rgb(36, 35, 35);
 }
 
 /*ubicacion*/
@@ -679,9 +682,10 @@
 }
 
 /*media queries para mobile*/
-@media screen and (max-width: 768px) and (min-width: 576px) {
+@media screen and (max-width: 768px) and (min-width: 500px) {
   .header {
-    display: flex;
+    background-color: #fdfcfb 2%,;
+
   }
   .headerLogo {
     width: 20%;
@@ -694,8 +698,16 @@
   .header__listaNav__linkNav {
     font-size: 11px;
   }
-  .inicio {
-    background: rgb(238, 237, 232);
+  .inicio{
+    background: url(./fondoInicioMobile2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .inicio__secUno{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 40vh;
   }
   .inicio__secUno__titulo {
     font-size: 30px;
@@ -704,18 +716,26 @@
     font-size: 15px;
   }
   .inicio__secUno__textUno {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.705);
     font-size: 13px;
+    font-weight: bold;
   }
   .inicio__secDos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 10px;
     padding: 10px;
   }
   .inicio__secDos__box {
     display: flex;
-
     width: 80%;
+    border: 2px dotted #c7b8ab;
+    background: #ece4ddb4;
+  }
+  .inicio__secDos__box:hover {
+    background-color:#ece4dd ;
   }
   .inicio__secDos__box__name {
     font-size: 10px;
@@ -725,31 +745,39 @@
   }
   .pagDos {
     display: block;
+    background-color: #fffbf8;
+  }
+  
+  .pagDos__secUno{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 30vh;
   }
   .pagDos__secUno__titulo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
     font-size: 25px;
     color: rgb(7, 0, 0);
+    margin-bottom: auto;
+    
   }
   .pagDos__secDos {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    vertical-align: baseline;
-    margin: auto;
+    flex-wrap: wrap;
+    margin: 15px;
+
   }
 
   .pagDos__secDos__img--der {
-    padding: auto;
-    width: 70%;
+    padding: 5px;
+    width: 150px;
+    margin: 5px;
   }
   .pagDos__secDos__img--izq{
-    padding: auto;
-    align-items: flex-end;
-    width: 70%;
+    padding: 5px;
+    width: 150px;
+    margin: 5px
   }
   .pagDos__secDos__text {
     width: 60%;
@@ -758,8 +786,12 @@
   }
 
   /*galeria*/
-  .pagTres{
-    background-size: contain;
+  .imgFondo{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 30vh;
   }
   .pagTres__titulo {
     display: flex;
@@ -777,100 +809,115 @@
   }
   /*video explicando metodo montessori*/
   .pagTres__secUno__frase {
-    width: 90%;
+    width: 80%;
+    padding: 5px;
     font-size: 12px;
+    border: 6px outset #d4ccc5;
+    border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px
   }
   .pagTres__secUno__video{
-    width: 90%;
-    padding: 0px;
+    width: 75%;
+    padding: 3px;
+    overflow: hidden;
   }
   .pagTres__secUno__text{
     font-size: 13px;
   }
 
-  .pagTres__secDos{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .pagTres__secDos__galeria {
-    font-size: 15px;
+    font-size: 20px;
+    color: #e09e64;
   }
 
   .pagTres__secDos__grilla {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 3px 3px;
-    /*agregar areas segun que use*/
+    margin: 10px;
   }
 
   .boxs {
     padding: 5px;
     object-fit: cover;
   }
-  .boxs:hover{
-    transform: none;
-  }
+  
 
   /*pagina institucion*/ 
   .pagCuatro{
-    background-size: contain;
+    margin: 0px;
+  }
+  .pagCuatro__secUno{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
   .pagCuatro__secUno__titulo {
-    display: flex;
-    justify-content: start;
-    margin-top: 5px;
     font-size: 25px;
+    margin-left: 0px;
+    margin-top: 0px;
     color: rgb(7, 0, 0);
   }
   
   /*presentacion personal institucional*/
   .pagCuatro__secDos {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom:0px;
+    margin: 0px;
+    padding: 0px;
   } /*ver propiedades*/
   .pagCuatro__div{
-    display: flex;
-    margin: 5px;
+    margin: 10px;
+    justify-content: center;
   }
   .pagCuatro__div__titulo {
-    font-size: 20px;
+    font-size: 18px;
+    text-decoration: underline;
   }
   
   .pagCuatro__div__img {
-    width: 30%;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
   
   .pagCuatro__div__name {
-    margin-left: 30px;
     font-size: 10px;
   }
   
   .pagCuatro__div__text {
-    width: 60%;
-    margin-right: 10px;
-    font-size: 11px;
+    width: 100%;
+    font-size: 12px;
+    margin: 0px;
 
   }
   
-  /*equipo docente*/  
+  /*equipo docente*/ 
+  .pagCuatro__divDos__titulo{
+    text-decoration: underline;
+    font-size: 18px;
+  } 
   .pagCuatro__divDos__img {
-    margin: 10px;
-    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
   }
   .pagCuatro__divDos__text {
-    font-size: 12px;
+    width: 100%;
+    font-size: 13px;
+    margin: 10px;
   }
 
   /*docentes*/
   .pagCuatro__divTres__box {
-    width: 20%;
-    border: 2px solid rgba(0, 0, 0, 0.534);
+    width: 35%;
+    margin: 15px;
   }
   .pagCuatro__divTres__text {
     font-size: 10px;
@@ -880,9 +927,14 @@
   .pagCuatro__secTres {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+  }
+  .pagCuatro__secTres__subtitulo{
+    text-decoration: underline;
+    font-size: 18px;
   }
   .pagCuatro__secTres__mapa {
-    width: 80%;
+    width: 100%;
   }
   
   /*admisiones*/
