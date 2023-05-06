@@ -216,7 +216,15 @@
 .pagDos__secDos {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 15px;
+}
+
+.pagDos__secDos__med{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
   justify-content: center;
   margin: 15px;
 }
@@ -496,7 +504,7 @@
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  background-color: white;
 }
 
 .pagCuatro__divTres__img {
@@ -532,7 +540,7 @@
 }
 
 .pagCuatro__secTres__mapa {
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-bottom: 40px;
 }
@@ -682,9 +690,349 @@
 }
 
 /*media queries para mobile*/
-@media screen and (max-width: 768px) and (min-width: 500px) {
+@media screen and (max-width: 576px) and (min-width: 360px){
   .header {
-    background-color: #fdfcfb 2%,;
+    background-color: #fdfcfb 1%;
+  }
+  .headerLogo {
+    width: 15%;
+    padding: 5px;
+
+  }
+  .header__listaNav {
+    width: 100px;
+  }
+  .header__listaNav__linkNav {
+    font-size: 11px;
+  }
+  .inicio{
+    background: url(./Fondos123.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .inicio__secUno{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 35vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+  }
+  .inicio__secUno__titulo {
+    font-size: 25px;
+  }
+  .inicio__secUno__subtitulo {
+    font-size: 13px;
+  }
+  .inicio__secUno__textUno {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.705);
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .inicio__secDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 0px;
+  }
+  .inicio__secDos__box {
+    display: flex;
+    width: 80%;
+    border: 2px dotted #c7b8ab;
+    background: #ece4ddb4;
+  }
+  .inicio__secDos__box:hover {
+    background-color:#ece4dd ;
+  }
+  .inicio__secDos__box__name {
+    font-size: 10px;
+  }
+  .inicio__secDos__box__text {
+    font-size: 10px;
+  }
+  .footer{
+    background-color: #fdfcfb 1%;
+  }
+  .footer__text{
+    font-size: 13px;
+  }
+  .pagDos {
+    display: block;
+    background-color: #fffbf8;
+  }
+  
+  .pagDos__secUno{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 30vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+  }
+  .pagDos__secUno__titulo {
+    font-size: 18px;
+    color: rgb(7, 0, 0);
+    margin-bottom: auto;
+    
+  }
+  .pagDos__secDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+  }
+  .pagDos__secDos__med{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .pagDos__secDos__img--der {
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+    border-end-start-radius: 0px;
+  }
+  .pagDos__secDos__img--izq{
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+    border-end-end-radius: 0px;
+  }
+  .pagDos__secDos__text {
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+  }
+
+  /*galeria*/
+  .imgFondo{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 40vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+  }
+  .pagTres__titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: rgb(7, 0, 0);
+  }
+  .pagTres__secUno{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*video explicando metodo montessori*/
+  .pagTres__secUno__frase {
+    width: 80%;
+    padding: 5px;
+    font-size: 12px;
+    border: 6px outset #d4ccc5;
+    border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px
+  }
+  .pagTres__secUno__video{
+    width: 75%;
+    padding: 3px;
+    overflow: hidden;
+  }
+  .pagTres__secUno__text{
+    font-size: 13px;
+  }
+
+  .pagTres__secDos__galeria {
+    font-size: 20px;
+    color: #e09e64;
+  }
+
+  .pagTres__secDos__grilla {
+    margin: 10px;
+  }
+
+  .boxs {
+    padding: 5px;
+    object-fit: cover;
+  }
+  
+
+  /*pagina institucion*/ 
+  .pagCuatro{
+    margin: 0px;
+  }
+  .pagCuatro__secUno{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 30vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+  }
+  .pagCuatro__secUno__titulo {
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(7, 0, 0);
+  }
+  
+  /*presentacion personal institucional*/
+  .pagCuatro__secDos {
+    margin-top: 0px;
+    margin-bottom:0px;
+    margin: 0px;
+    padding: 0px;
+  } /*ver propiedades*/
+  .pagCuatro__div{
+    margin: 10px;
+    justify-content: center;
+  }
+  .pagCuatro__div__titulo {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  
+  .pagCuatro__div__img {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagCuatro__div__name {
+    font-size: 10px;
+  }
+  
+  .pagCuatro__div__text {
+    width: 100%;
+    font-size: 12px;
+    margin: 0px;
+
+  }
+  
+  /*equipo docente*/ 
+  .pagCuatro__divDos__titulo{
+    text-decoration: underline;
+    font-size: 18px;
+  } 
+  .pagCuatro__divDos__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+  }
+  .pagCuatro__divDos__text {
+    width: 100%;
+    font-size: 13px;
+    margin: 10px;
+  }
+
+  /*docentes*/
+  .pagCuatro__divTres__box {
+    width: 35%;
+    margin: 15px;
+  }
+  .pagCuatro__divTres__text {
+    font-size: 10px;
+  }
+  
+  /*ubicacion*/
+  .pagCuatro__secTres {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .pagCuatro__secTres__subtitulo{
+    text-decoration: underline;
+    font-size: 18px;
+  }
+  .pagCuatro__secTres__mapa {
+    width: 100%;
+  }
+  
+  /*admisiones*/
+  .pagCinco{
+    width: 100%;
+    overflow: hidden;
+  }
+  .pagCinco__secUno{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 40vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .pagCinco__secUno__titulo {
+    display: flex;
+    margin-top: 0px;
+    margin: auto;
+    font-size: 20px;
+    color: rgb(7, 0, 0);
+    }
+  
+  .pagCinco__secUno__text {
+    font-size: 13px;
+  }
+  
+  /*segunda seccion de formulario*/
+  .pagCinco__secDos__subtitulo {
+    font-size: 15px;
+
+  }
+  
+  .pagCinco__secDos__text {
+    font-size: 13px;
+  
+  }
+  
+  .pagCinco__secDos__formulario {
+    width: 70%;
+  }
+  
+  .error404{
+    background-image: none;
+    background-color: #fdf7f3;
+    height: 100vh;
+  }
+  .error__text{
+    background-color: #f3efeb ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error__oops{
+    font-size: 60px;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .error__exp{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .header {
+    background-color: #fdfcfb 1%;
 
   }
   .headerLogo {
@@ -708,6 +1056,8 @@
   .inicio__secUno{
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     height: 40vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
   }
   .inicio__secUno__titulo {
     font-size: 30px;
@@ -743,6 +1093,9 @@
   .inicio__secDos__box__text {
     font-size: 10px;
   }
+  .footer{
+    background-color: #fdfcfb 1%;
+  }
   .pagDos {
     display: block;
     background-color: #fffbf8;
@@ -753,7 +1106,9 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    height: 30vh;
+    height: 40vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
   }
   .pagDos__secUno__titulo {
     font-size: 25px;
@@ -771,12 +1126,12 @@
 
   .pagDos__secDos__img--der {
     padding: 5px;
-    width: 150px;
+    width: 180px;
     margin: 5px;
   }
   .pagDos__secDos__img--izq{
     padding: 5px;
-    width: 150px;
+    width: 180px;
     margin: 5px
   }
   .pagDos__secDos__text {
@@ -791,7 +1146,9 @@
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    height: 30vh;
+    height: 40vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
   }
   .pagTres__titulo {
     display: flex;
@@ -847,7 +1204,9 @@
   }
   .pagCuatro__secUno{
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    height: 30vh;
+    height: 40vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -939,18 +1298,29 @@
   
   /*admisiones*/
   .pagCinco{
-      background-size: contain;
+    width: 100%;
+    overflow: hidden;
+  }
+  .pagCinco__secUno{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 40vh;
+    border-end-end-radius: 0px;
+    border-end-start-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .pagCinco__secUno__titulo {
     display: flex;
-    justify-content: center;
-    margin-top: 200px;
+    margin-top: 0px;
+    margin: auto;
     font-size: 25px;
     color: rgb(7, 0, 0);
     }
   
   .pagCinco__secUno__text {
-    font-size: 13px;
+    font-size: 15px;
   }
   
   /*segunda seccion de formulario*/
@@ -965,15 +1335,16 @@
   }
   
   .pagCinco__secDos__formulario {
-    width: 90%;
+    width: 80%;
   }
   
   .error404{
     background-image: none;
-    background-color: #ece7e4;
+    background-color: #fdf7f3;
     height: 100vh;
   }
   .error__text{
+    background-color: #f3efeb ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -994,7 +1365,7 @@
 /*media queries para tablets - algunas modificaciones*/
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .inicio {
-    background: rgb(238, 237, 232);
+    background: #fdfcfb 1%;
   }
   .inicio__secUno__titulo {
     font-size: 30px;
@@ -1003,7 +1374,7 @@
     font-size: 15px;
   }
   .inicio__secUno__textUno {
-    font-size: small;
+    font-size: 15px;
   }
   .inicio__secDos {
     display: flex;
@@ -1021,13 +1392,39 @@
   .inicio__secDos__box__text {
     font-size: 13px;
   }
+  .footer{
+    background-color: #fdfcfb 1%;
+  }
   .pagDos__secDos {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     vertical-align: baseline;
-    margin: auto;
+    margin: 15px;
+  }
+  .pagDos__secDos__med{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    vertical-align: baseline;
+    margin: 15px;
+  }
+
+  .pagDos__secDos__img--der {
+    width: 250px;
+    margin: 10px;
+    border-end-start-radius: 75px;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  
+  .pagDos__secDos__img--izq {
+    display: flex;
+    width: 250px;
+    margin: 10px;
+    border-end-end-radius: 75px;
+    border: 1px solid rgba(0, 0, 0, 0);
   }
   .pagDos__secUno__titulo {
     display: flex;
@@ -1037,7 +1434,7 @@
     color: rgb(7, 0, 0);
   }
   .pagDos__secDos__text {
-    width: 50%;
+    width: 60%;
     margin: 10px;
     font-size: 15px;
   }
@@ -1063,22 +1460,81 @@
     font-size: 25px;
     color: rgb(7, 0, 0);
   }
+  .pagCuatro__secDos {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom:0px;
+    margin: 0px;
+    padding: 0px;
+  } /*ver propiedades*/
+  .pagCuatro__div{
+    margin: 10px;
+    justify-content: center;
+  }
+  .pagCuatro__div__titulo {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
   .pagCuatro__div__img {
-    width: 30%;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
   
   .pagCuatro__div__name {
-    margin-left: 40px;
     font-size: 10px;
   }
   
   .pagCuatro__div__text {
-    width: 60%;
-    margin-right: 10px;
-    font-size: 13px;
-    ;
+    width: 100%;
+    font-size: 15px;
+    margin: 0px;
+
   }
+  
+  /*equipo docente*/ 
+  .pagCuatro__divDos__titulo{
+    text-decoration: underline;
+    font-size: 20px;
+  } 
+  .pagCuatro__divDos__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+  }
+  .pagCuatro__divDos__text {
+    width: 100%;
+    font-size: 15px;
+    margin: 10px;
+  }
+  /*docentes*/
+  .pagCuatro__divTres__box {
+    width: 30%;
+    margin: 15px;
+  }
+  .pagCuatro__divTres__text {
+    font-size: 13px;
+  }
+  
+  /*ubicacion*/
+  .pagCuatro__secTres {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .pagCuatro__secTres__subtitulo{
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  .pagCuatro__secTres__mapa {
+    width: 90%;
+  }
+  
   .pagCinco__secUno{
     display: flex;
   }
@@ -1091,10 +1547,11 @@
   }
   .error404{
     background-image: none;
-    background-color: #ece7e4;
+    background-color: #fdf7f3;
     height: 100vh;
   }
   .error__text{
+    background-color: #f3efeb ;
     display: flex;
     justify-content: center;
     align-items: center;
