@@ -20,4 +20,24 @@
         }
     }
 }
-
+/*media queries para mobile*/
+@media screen and (max-width: 576px) and (min-width: 360px){
+    .footer{
+        background-color: #fdfcfb 1%;
+        .footer__text{
+            font-size: map-get($sizes,13);
+        }
+    }
+    
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .footer{
+        background-color: #fdfcfb 1%;
+    }
+}
+/*media queries para tablets - algunas modificaciones*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .footer{
+        background-color: #fdfcfb 1%;
+    }
+}

@@ -88,58 +88,125 @@
 
 }
 
-@media screen and (max-width: 768px) and (min-width: 576px){
+/*media queries para mobile pequeño*/
+@media screen and (max-width: 576px) and (min-width: 360px){
     .inicio{
-        background: rgb(238, 237, 232);
+        background: url(./Fondos123.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        overflow: hidden;
         .inicio__secUno{
-            .inicio__secUno__titulo{
-                font-size: map-get($sizes, 30);
-            }
-            .inicio__secUno__subtitulo{
-                font-size: map-get($sizes,15);
-            }
-            .inicio__secUno__textUno{
-                font-size: map-get($sizes,13);
-            }
-        }
-        
-        .inicio__secDos{
-            display: $contenedor_flex;
-            flex-direction: $contenedor_fila;
-            flex-wrap: wrap;
-            padding: 10px;
-            .inicio__secDos__box{
-                display:$contenedor_flex;
-                width: 80%;
-                margin: auto;
-            } 
-            .inicio__secDos__box__name{
-                font-size: map-get($sizes,10);
-            }
-            .inicio__secDos__box__text{
-                font-size: map-get($sizes,10);
-            }
-        }
-    }
-}
-/*media queries para tablets - algunas modificaciones*/
-@media screen and (max-width: 992px) and (min-width: 768px) {
-    .inicio {
-        .inicio__secUno{
+            background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            height: 35vh;
+            border-end-end-radius: 0px;
+            border-end-start-radius: 0px;
             .inicio__secUno__titulo {
-                font-size:  map-get($sizes,30);
+                font-size: map-get($sizes,25);
             }
             .inicio__secUno__subtitulo {
-                font-size:  map-get($sizes,15);
+                font-size: map-get($sizes,13);
             }
             .inicio__secUno__textUno {
-                font-size: small;
+                width: 90%;
+                background-color: rgba(255, 255, 255, 0.705);
+                font-size: 10px;
+                font-weight: $fuente-bold;
             }
         }
         .inicio__secDos {
             display: $contenedor_flex;
             flex-direction: $contenedor_fila;
             flex-wrap: wrap;
+            margin: 10px;
+            padding: 0px;
+            .inicio__secDos__box {
+                display: $contenedor_flex;
+                width: 80%;
+                border: 2px dotted #c7b8ab;
+                background: #ece4ddb4;
+            }
+            .inicio__secDos__box:hover {
+                background-color:#ece4dd ;
+            }
+            .inicio__secDos__box__name {
+                font-size: map-get($sizes,10);
+            }
+            .inicio__secDos__box__text {
+                font-size: map-get($sizes,10);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .inicio{
+        background: url(./fondoInicioMobile2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        overflow: hidden;
+        .inicio__secUno{
+            background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            height: 40vh;
+            border-end-end-radius: 0px;
+            border-end-start-radius: 0px;
+            .inicio__secUno__titulo {
+                font-size: map-get($sizes,30);
+            }
+            .inicio__secUno__subtitulo {
+                font-size: map-get($sizes,15);
+            }
+            .inicio__secUno__textUno {
+                width: 90%;
+                background-color: rgba(255, 255, 255, 0.705);
+                font-size: map-get($sizes,13);
+                font-weight: $fuente-bold;
+            }
+            .inicio__secDos {
+                display:$contenedor_flexx;
+                flex-direction: $contenedor_fila;
+                flex-wrap: wrap;
+                margin: 10px;
+                padding: 10px;
+                .inicio__secDos__box {
+                    display: $contenedor_flex;
+                    width: 80%;
+                    border: 2px dotted #c7b8ab;
+                    background: #ece4ddb4;
+                }
+                .inicio__secDos__box:hover {
+                    background-color:#ece4dd ;
+                }
+                .inicio__secDos__box__name {
+                    font-size: map-get($sizes,10);
+                }
+                .inicio__secDos__box__text {
+                    font-size:map-get($sizes,10);
+                }
+            }
+        }
+    }
+}
+
+/*media queries para tablets - algunas modificaciones*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .inicio {
+        background: #fdfcfb 1%;
+        .inicio__secUno{
+            .inicio__secUno__titulo {
+                font-size: map-get($sizes,30);
+            }
+            .inicio__secUno__subtitulo {
+                font-size: map-get($sizes,15);
+            }
+            .inicio__secUno__textUno {
+                font-size: 1map-get($sizes,15);
+            }
+        }
+        .inicio__secDos {
+            display: $contenedor_flex;
+            flex-direction: $contenedor_fila;
             margin: 10px;
             padding: 10px;
             .inicio__secDos__box {
